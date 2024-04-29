@@ -1,10 +1,14 @@
-﻿namespace Text_RPG
+﻿using System.Runtime.InteropServices;
+
+namespace Text_RPG
 {
-    internal class Program
+    internal partial class Program
     {
+       
         static void Main(string[] args)
         {
-            
+            Battle battle = new Battle();
+            battle.BattlePhase();            
         }
     }
 }
