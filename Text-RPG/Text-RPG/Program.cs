@@ -7,6 +7,7 @@ namespace Text_RPG
        
         static void Main(string[] args)
         {
+
         }
     }
 }
