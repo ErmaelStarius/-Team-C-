@@ -18,7 +18,7 @@ namespace Text_RPG
         float enemyDeffense = 3f;       //임시 몬스터 방어력
         Random random = new Random();   //난수
         float[] RandomDamage = { 0.9f, 1.0f, 1.1f};  //플레이어의 데미지에서 90%, 100% 110% 중 하나가 적용
-        float MaxHp = playerHp;
+        
         
         
         public void BattlePhase()   //전투과정
@@ -37,12 +37,19 @@ namespace Text_RPG
                 Console.WriteLine("");
 
                 BattleStats(); //플레이어와 적의 체력 상태
-
                 MyTurn();  //내턴
-
+                ContinueTurn();
                 EnemyTurn();  //적의턴 그러고 적이 죽으면 다시 플레이어턴으로 돌아간다.
                 
             }
+        }
+
+        private void ContinueTurn()
+        {
+            BattleStats();
+            Console.Write("적의 턴입니다. 이어갈려면 아무 키를 눌러 주세요. >>  ");
+            Console.ReadKey();
+            Console.Clear();            
         }
 
         private void EnemyTurn()
@@ -55,7 +62,7 @@ namespace Text_RPG
 
                 playerHp -= (enemyAttack - playerDeffense);                               //적의 데미지는 공격력 - 방어력
                 Console.WriteLine($"적은 당신에게 {EnemyDamage.ToString("N1")} 만큼의 데미지를 입혔습니다.");
-                Console.WriteLine("");
+                
             }
             else
             {

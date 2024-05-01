@@ -7,12 +7,7 @@ namespace Text_RPG
        
         static void Main(string[] args)
         {
-            Intro intro = new Intro();
-            Main main = new Main();
-
-            intro.IntroScene();
-
-            main.MainMenu();
+           
         }
     }
 }
