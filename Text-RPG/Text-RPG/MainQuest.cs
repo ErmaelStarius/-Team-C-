@@ -115,11 +115,4 @@ public class QuestManager
             case 0: QuestMenu(); break;
         }
     }
-
-
-    public static void Main(string[] args)
-    {
-        QuestManager questManager = new QuestManager();
-        questManager.QuestMenu();
-    }
 }
