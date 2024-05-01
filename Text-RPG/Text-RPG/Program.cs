@@ -7,9 +7,6 @@ namespace Text_RPG
        
         static void Main(string[] args)
         {
-            Console.WriteLine("적이 나타났다!");
-            Battle battle = new Battle();
-            battle.BattlePhase();            
         }
     }
 }
