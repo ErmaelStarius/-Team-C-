@@ -18,7 +18,7 @@ namespace Text_RPG
         float enemyDeffense = 3f;       //임시 몬스터 방어력
         Random random = new Random();   //난수
         float[] RandomDamage = { 0.9f, 1.0f, 1.1f};  //플레이어의 데미지에서 90%, 100% 110% 중 하나가 적용
-        float MaxHp = playerHp;
+
         
         
         public void BattlePhase()   //전투과정
