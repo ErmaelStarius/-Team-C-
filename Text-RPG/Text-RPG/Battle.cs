@@ -46,7 +46,8 @@ namespace Text_RPG
 
         private void EnemyTurn()
         {
-            float EnemyDamage = enemyAttack - playerDeffense;
+            
+            float EnemyDamage = enemyAttack * RandomDamage[random.Next(RandomDamage.Length)] - playerDeffense;
 
             if (enemyHp > 0)      //적의 턴
             {
