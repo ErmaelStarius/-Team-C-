@@ -1,15 +1,13 @@
-﻿namespace Text_RPG
+using System.Runtime.InteropServices;
+
+namespace Text_RPG
 {
-    internal class Program
+    internal partial class Program
     {
+       
         static void Main(string[] args)
         {
-            Intro intro = new Intro();
-            Main main = new Main();
-
-            intro.IntroScene();
-
-            main.MainMenu();
+           
         }
     }
 }
