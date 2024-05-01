@@ -30,6 +30,7 @@ namespace Text_RPG
                 {
                     Console.Clear();
                     images.GameOver();
+                    Console.ReadKey(true);
                     break;
                 }
                 else
@@ -39,10 +40,10 @@ namespace Text_RPG
 
                     ConsoleKeyInfo restartkey = Console.ReadKey(true);
 
-                    if (restartkey.Key == ConsoleKey.Z)
+                    if (restartkey.Key != null)
                     {
                         Console.Clear();
-                        ;
+                        images.Intro();
 
                         startkey = Console.ReadKey(true);
                     }
