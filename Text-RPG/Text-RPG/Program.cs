@@ -1,17 +1,21 @@
-using System.Runtime.InteropServices;
+﻿using System.Numerics;
+using System.Threading.Tasks.Dataflow;
 
 namespace Text_RPG
 {
-    internal partial class Program
-    {
-       
-        static void Main(string[] args)
+        internal class Program
         {
-            //Intro intro = new Intro();
-            //Main mainmenu = new Main();
+            private Player player;
+            public static void Main(string[] args)
+            {
+               
+               StartGame();
 
-            //intro.IntroScene();
-            //mainmenu.MainMenu();
+            }
+
+            private static void StartGame()
+            {
+                new Intro().IntroScene();
+            }
         }
-    }
 }
