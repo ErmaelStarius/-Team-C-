@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,10 +16,33 @@
       "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\images.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\images.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\intro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\intro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\createcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\createcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> main
       "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\dialogue_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\dialogue_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\dialogue_systemtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\dialogue_systemtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -45,6 +69,30 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\dialogue_prisonertext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\dialogue_prisonertext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\dialogue_prisonertext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\dialogue_prisonertext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\dialogue_playertext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\dialogue_playertext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\dialogue_systemtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\dialogue_systemtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\mainquest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\mainquest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> main
     }
   ],
   "DocumentGroupContainers": [
@@ -54,6 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 6,
           "Children": [
             {
@@ -103,31 +152,104 @@
               "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_Menu.cs",
               "RelativeToolTip": "Text-RPG\\Dialogue_Menu.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAewA4AAAAIAAAA",
+=======
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateCharacter.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\CreateCharacter.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\CreateCharacter.cs",
+              "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\CreateCharacter.cs",
+              "RelativeToolTip": "Text-RPG\\CreateCharacter.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAqwFcAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:51:39.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-02T02:42:24.167Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dialogue_PrisonerText.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_PrisonerText.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\Dialogue_PrisonerText.cs",
+              "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_PrisonerText.cs",
+              "RelativeToolTip": "Text-RPG\\Dialogue_PrisonerText.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAwCAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T09:12:19.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dialogue_PlayerText.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_PlayerText.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\Dialogue_PlayerText.cs",
+              "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_PlayerText.cs",
+              "RelativeToolTip": "Text-RPG\\Dialogue_PlayerText.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAqAAAA",
+>>>>>>> main
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T09:11:03.486Z"
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
+=======
+              "DocumentIndex": 8,
+              "Title": "Dialogue_SystemText.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_SystemText.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\Dialogue_SystemText.cs",
+              "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_SystemText.cs",
+              "RelativeToolTip": "Text-RPG\\Dialogue_SystemText.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T09:10:29.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dialogue_Menu.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_Menu.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\Dialogue_Menu.cs",
+              "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_Menu.cs",
+              "RelativeToolTip": "Text-RPG\\Dialogue_Menu.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAewBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T07:51:39.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+>>>>>>> main
               "Title": "Images.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Images.cs",
               "RelativeDocumentMoniker": "Text-RPG\\Images.cs",
               "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Images.cs",
               "RelativeToolTip": "Text-RPG\\Images.cs",
+<<<<<<< HEAD
               "ViewState": "AQIAAAMCAAAAAAAAAAAgwBcCAAAnAAAA",
+=======
+              "ViewState": "AQIAADACAAAAAAAAAAAAAKgDAACNAAAA",
+>>>>>>> main
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T04:46:24.038Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 4,
+>>>>>>> main
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Program.cs",
               "RelativeDocumentMoniker": "Text-RPG\\Program.cs",
               "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Program.cs",
               "RelativeToolTip": "Text-RPG\\Program.cs",
+<<<<<<< HEAD
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T04:10:08.912Z",
@@ -142,13 +264,31 @@
               "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Battle.cs",
               "RelativeToolTip": "Text-RPG\\Battle.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAAwC8AAAA/AAAA",
+=======
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
+>>>>>>> main
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T01:42:08.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T04:10:08.912Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 8,
+=======
+              "DocumentIndex": 10,
+              "Title": "Battle.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Battle.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\Battle.cs",
+              "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Battle.cs",
+              "RelativeToolTip": "Text-RPG\\Battle.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T01:42:08.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+>>>>>>> main
               "Title": "Dialogue.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue.cs",
               "RelativeDocumentMoniker": "Text-RPG\\Dialogue.cs",
@@ -160,19 +300,27 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 6,
+=======
+              "DocumentIndex": 3,
+>>>>>>> main
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Main.cs",
               "RelativeDocumentMoniker": "Text-RPG\\Main.cs",
               "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Main.cs",
               "RelativeToolTip": "Text-RPG\\Main.cs",
+<<<<<<< HEAD
               "ViewState": "AQIAAA4AAAAAAAAAAADwvykAAAAhAAAA",
+=======
+              "ViewState": "AQIAAA0AAAAAAAAAAAAxwBgAAAAxAAAA",
+>>>>>>> main
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T04:10:08.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T04:10:08.907Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 10,
               "Title": "Dialogue_PrisonerText.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_PrisonerText.cs",
@@ -186,14 +334,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
+=======
+              "DocumentIndex": 1,
+>>>>>>> main
               "Title": "Intro.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Intro.cs",
               "RelativeDocumentMoniker": "Text-RPG\\Intro.cs",
               "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Intro.cs",
               "RelativeToolTip": "Text-RPG\\Intro.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAlAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T04:10:08.91Z"
+<<<<<<< HEAD
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainQuest.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\MainQuest.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\MainQuest.cs",
+              "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\MainQuest.cs",
+              "RelativeToolTip": "Text-RPG\\MainQuest.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAAwHQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T03:40:37.674Z"
+>>>>>>> main
             }
           ]
         }

@@ -12,7 +12,7 @@ namespace Text_RPG
 
         public void IntroScene()
         {
-            images.Intro();
+            images.Title();
 
             ConsoleKeyInfo startkey = Console.ReadKey(true);
 
@@ -22,6 +22,10 @@ namespace Text_RPG
                 if (startkey.Key == ConsoleKey.Z)
                 {
                     Console.Clear();
+                    images.Intro();
+                    Console.ReadKey();
+                    new CreateCharacter().NewCharacter();
+                    ConsoleUtility.CharacterChoice(1, 2);
                     images.Loading();
                     break;
 
