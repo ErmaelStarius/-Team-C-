@@ -18,7 +18,7 @@ namespace Text_RPG
 
             do
             {
-                // 조건
+                // 게임시작 > 로딩화면
                 if (startkey.Key == ConsoleKey.Z)
                 {
                     Console.Clear();
@@ -27,14 +27,17 @@ namespace Text_RPG
                     break;
 
                 }
+                // 게임종료
                 else if (startkey.Key == ConsoleKey.X)
                 {
                     Console.Clear();
                     ConsoleUtility.CharacterChoice(1,2);
                     images.GameOver();
                     Console.ReadKey(true);
+                    // cmd종료 함수
                     break;
                 }
+                // 에러화면
                 else
                 {
                     Console.Clear();

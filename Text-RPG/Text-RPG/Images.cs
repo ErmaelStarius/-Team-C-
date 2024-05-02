@@ -386,6 +386,9 @@ namespace Text_RPG
 
         public ConsoleKeyInfo Main(string name, string question, string option_01, string option_02, string option_03)
         {
+            Console.Clear();
+
+
             Console.WriteLine
                 (
 
