@@ -15,6 +15,7 @@ namespace Text_RPG
         {
             Dialogue dialogue = new Dialogue();
             Dialogue_Menu menu = new Dialogue_Menu();
+            Battle battle = new Battle();
 
             ConsoleKeyInfo mainmenu = images.Main(menu._Name, menu._MainMenu_Text, menu._MainMenu_Option_01, menu._MainMenu_Option_02, menu._MainMenu_Option_03);
 
@@ -33,11 +34,14 @@ namespace Text_RPG
                 else if (mainmenu.Key == ConsoleKey.C)
                 {
                     // 전투
-                    
+                    Console.Clear();
+                    battle.BattlePhase();
                 }
-                else if (mainmenu.Key == ConsoleKey.D1)
+                else if (mainmenu.Key == ConsoleKey.D6)
                 {
-                    new Status().StatusMenu();
+                    // 캐릭터(생성/직업)
+                    new CreateCharacter().NewCharacter();
+                    ConsoleUtility.CharacterChoice(1, 2);
                 }
                 else
                 {

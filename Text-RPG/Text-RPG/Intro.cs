@@ -23,7 +23,6 @@ namespace Text_RPG
                 {
                     Console.Clear();
                     images.Loading();
-                    new CreateCharacter().NewCharacter();
                     break;
 
                 }
@@ -31,10 +30,9 @@ namespace Text_RPG
                 else if (startkey.Key == ConsoleKey.X)
                 {
                     Console.Clear();
-                    ConsoleUtility.CharacterChoice(1,2);
                     images.GameOver();
                     Console.ReadKey(true);
-                    // cmd종료 함수
+                    Environment.Exit(0);
                     break;
                 }
                 // 에러화면
