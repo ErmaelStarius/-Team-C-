@@ -7,12 +7,14 @@ namespace Text_RPG
        
         static void Main(string[] args)
         {
-            Console.SetWindowSize(250, 65);
+            /*Console.SetWindowSize(250, 65);
             Intro intro = new Intro();
             Main main = new Main();
 
             intro.IntroScene();
-            main.MainMenu();
+            main.MainMenu();*/
+            Battle battle = new Battle();
+            battle.BattlePhase();
         }
     }
 }
