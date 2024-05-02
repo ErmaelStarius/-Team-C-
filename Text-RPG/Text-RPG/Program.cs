@@ -5,9 +5,6 @@ namespace Text_RPG
 {
         internal class Program
         {
-            
-            
-
             public static void Main(string[] args)
             {
                 Intro intro = new Intro();

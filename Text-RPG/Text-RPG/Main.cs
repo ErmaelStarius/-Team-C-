@@ -16,6 +16,7 @@ namespace Text_RPG
             Dialogue dialogue = new Dialogue();
             Dialogue_Menu menu = new Dialogue_Menu();
             Battle battle = new Battle();
+            QuestManager questManager = new QuestManager();
 
             ConsoleKeyInfo mainmenu = images.Main(menu._Name, menu._MainMenu_Text, menu._MainMenu_Option_01, menu._MainMenu_Option_02, menu._MainMenu_Option_03);
 
@@ -37,11 +38,17 @@ namespace Text_RPG
                     Console.Clear();
                     battle.BattlePhase();
                 }
-                else if (mainmenu.Key == ConsoleKey.D6)
+                else if (mainmenu.Key == ConsoleKey.D6 || mainmenu.Key == ConsoleKey.NumPad6)
                 {
                     // 캐릭터(생성/직업)
                     new CreateCharacter().NewCharacter();
                     ConsoleUtility.CharacterChoice(1, 2);
+                }
+                else if (mainmenu.Key == ConsoleKey.D5 || mainmenu.Key == ConsoleKey.NumPad5)
+                {
+                    // 퀘스트(목록/내용)
+                    Console.Clear();
+                    questManager.QuestMenu();
                 }
                 else
                 {
