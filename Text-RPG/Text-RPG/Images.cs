@@ -8,7 +8,6 @@ namespace Text_RPG
 {
     internal class Images
     {
-
         public void Intro()
         {
             Console.WriteLine
@@ -78,6 +77,23 @@ namespace Text_RPG
                 );
         }
 
+        //플레이어 이름 입력 이미지 필요
+        public void UserName()
+        {
+        
+        }
+
+        //직업선택 이미지 필요
+        public void CharacterSelect()
+        {
+
+        }
+
+        //1.예, 2.아니오
+        public void Accept()
+        {
+
+        }
 
         public void Loading()
         {

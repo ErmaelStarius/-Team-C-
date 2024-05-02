@@ -31,6 +31,10 @@ namespace Text_RPG
                 {
 
                 }
+                else if (mainmenu.Key == ConsoleKey.D1)
+                {
+                    new Status().StatusMenu();
+                }
                 else
                 {
                     Console.Clear();
