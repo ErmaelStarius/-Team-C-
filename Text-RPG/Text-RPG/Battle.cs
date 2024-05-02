@@ -30,7 +30,7 @@ namespace Text_RPG
         public void BattlePhase()   //전투과정
         {
             Console.Clear();
-            images.BattlePage_Goblin();           
+            images.BattlePage_Wolf(50,50,"hello","wolf","player",50,50,"hello");          
         }
 
         private void BattleLog()
