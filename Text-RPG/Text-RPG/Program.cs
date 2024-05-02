@@ -12,6 +12,8 @@ namespace Text_RPG
                
                 Main main = new Main();
                 main.MainMenu();
+
+            // test
             }
             
         }
