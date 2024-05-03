@@ -11,6 +11,8 @@ namespace Text_RPG
     {
         Images images = new Images();
         QuestManager questManager = new QuestManager();
+        Dialogue dialogue = new Dialogue();
+        Battle battle = new Battle();
 
         public void MainMenu(Player player)
         {
@@ -23,7 +25,8 @@ namespace Text_RPG
             {
                 if (mainmenu.Key == ConsoleKey.Z)
                 {
-
+                    Console.Clear();
+                    dialogue.Chapter_01();
                 }
                 else if (mainmenu.Key == ConsoleKey.X)
                 {
@@ -31,7 +34,8 @@ namespace Text_RPG
                 }
                 else if (mainmenu.Key == ConsoleKey.C)
                 {
-
+                    Console.Clear();
+                    battle.BattlePhase();
                 }
                 else if (mainmenu.Key == ConsoleKey.D5 || mainmenu.Key == ConsoleKey.NumPad5)
                 {

@@ -27,12 +27,7 @@ namespace Text_RPG
                 }
                 else if (startkey.Key == ConsoleKey.X)
                 {
-                    Console.Clear();
-                    Console.WriteLine("**********************************************\n");
-                    Console.WriteLine("           게임을 종료 하시겠습니까?          \n");
-                    Console.WriteLine("               1.예, 2.아니오                 \n");
-                    Console.WriteLine("**********************************************");
-                    Console.Write(">> ");
+                    images.EndPage();
                     int choice = ConsoleUtility.PromptChoice(1,2);
                     switch(choice)
                     {
