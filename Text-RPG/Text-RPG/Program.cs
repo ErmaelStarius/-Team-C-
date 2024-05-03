@@ -15,6 +15,7 @@ namespace Text_RPG
                 //main.MainMenu();
                 Battle battle = new Battle();
                 battle.BattlePhase();
+                
             }
             
         }
