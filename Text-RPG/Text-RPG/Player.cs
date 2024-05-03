@@ -1,6 +1,6 @@
 ﻿namespace Text_RPG
 {
-    internal class Player
+    public class Player
     {
         //생성자이후에 Set하지 않겠다! => 읽기 전용이라는 말
         public string Name { get; } //캐릭터명
@@ -26,13 +26,6 @@
             Mp = mp;
             Gold = gold;
         }
-        
-        private Player player;
-
-        //플레이어 초기설정
-        internal static void InitializeGame(string playerName, string playerjob, int Atk, int Def, int Hp, int Mp)
-        {
-           Player player = new Player(playerName, playerjob, 1, 0, Atk, Def, Hp, Mp, 1500);
-        }
+      
     }
 }
