@@ -1,51 +1,68 @@
 ﻿using System;
+using System.Numerics;
 using System.Xml.Serialization;
 
 namespace Text_RPG
 {
     internal class Battle
     {
+        
+
+
         //현재 플레이어와 적의 수치는 임시로 되어있으므로 향후 수정할 계획
 
-
-
-
-        float playerHp = 100f;           //임시 플레이어 Hp
-        float playerAttack = 9f;       //임시 플레이어 공격력
-        float playerDeffense = 3f;      //임시 플레이어 방어력
-        float enemyHp = 80f;            //임시 몬스터 Hp
-        float enemyAttack = 10f;         //임시 몬스터 공격력
-        float enemyDeffense = 3f;       //임시 몬스터 방어력
+        
+      
+        string playername;
+        float playerHp;//임시 플레이어 Hp
+        float playerAttack;        
+        float playerDeffense;    //임시 플레이어 방어력
+        string enemyname;
+        float enemyHp;            //임시 몬스터 Hp
+        float enemyAttack;        //임시 몬스터 공격력
+        float enemyDeffense;    //임시 몬스터 방어력
+        float enemyExp;
+        float enemyGold;
         Random random = new Random();   //난수
+        float playerMp = 50;
         float[] RandomDamage = { 0.9f, 1.0f, 1.1f};  //플레이어의 데미지에서 90%, 100% 110% 중 하나가 적용
+
         
-        
-        
-        public void BattlePhase()   //전투과정
+        public void BattlePhase(Player player)   //전투과정
         {
+            string playername = player.Name;
+            float playerHp = player.Hp;
+            float playerDeffense = player.Def;
+            float playerMp = player.Mp;
+            float playerExp = player.Exp;
+            float playerGold = player.Gold;
 
-
-            while (playerHp > 0 && enemyHp > 0)
+            MonsterAppearRandom();
+            while (playerAttack > 0 && enemyHp > 0)
 
             {
-                if(playerHp > 100f)
-                {
-                    playerHp = 100f;
 
-                }
-
-                Console.WriteLine("");
-
-                BattleStats(); //플레이어와 적의 체력 상태
                 MyTurn();  //내턴
+                if (enemyHp <= 0)
+                {
+                    Battle_Reward();
+                    break;
+                }
                 ContinueTurn();
                 EnemyTurn();  //적의턴 그러고 적이 죽으면 다시 플레이어턴으로 돌아간다.
-                
+
             }
         }
 
-        private void ContinueTurn()
+        private void BattleLog()
         {
+            
+
+            
+        }
+
+        private void ContinueTurn()
+        {           
             BattleStats();
             Console.Write("적의 턴입니다. 이어갈려면 아무 키를 눌러 주세요. >>  ");
             Console.ReadKey();
@@ -60,15 +77,13 @@ namespace Text_RPG
             if (enemyHp > 0)      //적의 턴
             {
 
-                playerHp -= (enemyAttack - playerDeffense);                               //적의 데미지는 공격력 - 방어력
+                playerAttack -= (enemyAttack - playerDeffense);                               //적의 데미지는 공격력 - 방어력
                 Console.WriteLine($"적은 당신에게 {EnemyDamage.ToString("N1")} 만큼의 데미지를 입혔습니다.");
                 
             }
             else
             {
-                Console.Clear();
-                Console.WriteLine("");
-                Console.WriteLine("당신은 적을 쓰러뜨렸습니다!!"); //적을 쓰러뜨림_보상추가 예정
+                Battle_Reward();
             }
             if (playerHp <= 0)
             {
@@ -78,36 +93,40 @@ namespace Text_RPG
             }
         }
 
+        private void Battle_Reward() //보상
+        {
+            if(enemyname == "늑대")
+            {
+                //questManager.KillWolfCount();
+            }
+            Console.Clear();
+            Console.WriteLine("");
+            Console.WriteLine("당신은 적을 쓰러뜨렸습니다!!"); //적을 쓰러뜨림_보상추가 예정
+            Console.WriteLine($"당신은 {enemyExp} 만큼의 경험치와 {enemyGold}를 획득했습니다!"); //적을 쓰러뜨림_보상추가 예정
+        }
+
         private void MyTurn()  //플레이어의 차례
         {
             float PlayerDamage = playerAttack * RandomDamage[random.Next(RandomDamage.Length)];
             float MyAttack = PlayerDamage - enemyDeffense;
             float MySkillAttack = PlayerDamage * 2 - enemyDeffense;
-
-            Console.WriteLine("플레이어의 차례입니다.");
-            Console.WriteLine("");
-            Console.WriteLine("무엇을 하시겠습니까?.");
-            Console.WriteLine("");
+            
+            BattleStats();
             Console.WriteLine("1. 공격 | 2. 스킬 | 3. 아이템 | 4. 도망치기");
-            Console.WriteLine("");
+            Console.WriteLine();
             Console.Write("행동을 고르싶시오 >>   ");
             string choice = Console.ReadLine();
             if (choice == "1")                             
             {
+                Console.WriteLine();
                 Console.Clear();
                 enemyHp -= (PlayerDamage - enemyDeffense);                                                        //현재 플레이어의 데미지는 공격력 - 적의 방어력
-                Console.WriteLine($"당신은 적에게 {MyAttack.ToString("N1")} 만큼의 데미지를 입혔습니다.");   //향후 "적" 에 몬스터 이름이 들어갈 계획
-                Console.WriteLine("");
+                Console.WriteLine($"{playername}은 적에게 {MyAttack.ToString("N1")} 만큼의 데미지를 입혔습니다.");   //향후 "적" 에 몬스터 이름이 들어갈 계획
+                
             }
             else if (choice == "2")
             {
-                Console.WriteLine("");
-                Console.Clear();
-                Console.WriteLine("당신은 강한 공격을 썻다!");
-                Console.WriteLine("");
-                enemyHp -= (PlayerDamage * 2) - enemyDeffense;                                  //향후 스킬을 넣을 계획
-                Console.WriteLine($"당신은 적에게 {MySkillAttack.ToString("N1")} 만큼의 데미지를 입혔습니다.");
-                Console.WriteLine("");
+                Battle_Skill();
             }
             else if (choice == "3")
             {
@@ -117,18 +136,13 @@ namespace Text_RPG
             }
             else if (choice == "4")
             {
-                Console.WriteLine("");
                 Console.Clear();
                 Console.WriteLine("당신은 도망쳤다!");   //도망치기_패널티로 돈이 떨어짐
-                Console.WriteLine("");
             }
             else
             {
-                Console.WriteLine("");
                 Console.Clear();
                 Console.WriteLine("잘못 입력헀습니다. 다시 눌러주십시오");
-                Console.WriteLine("");
-                BattleStats();
                 MyTurn();
             }
         }
@@ -137,62 +151,156 @@ namespace Text_RPG
         {
             Console.Clear();
             BattleStats();
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("인벤토리에 있는 아이템 중에서 사용할 것을 고르세요.");
-            Console.WriteLine("");
             Console.WriteLine("1. 회복포션 | 2. 돌아가기");
             Console.WriteLine("");
             Console.Write("행동을 고르싶시오 >>   ");
             string choiceitem = Console.ReadLine();
             if (choiceitem == "1")
             {
-                Console.WriteLine("");
                 Console.Clear();
-                Console.WriteLine("당신은 포션을 사용했다.!");   //포션 사용
-                Console.WriteLine("");
-                Console.WriteLine("당신은 체력이 10만큼 회복했습니다.");
-                Console.WriteLine("");
+                Console.WriteLine("당신은 포션을 사용해 10 만큼 회복했다.!");   //포션 사용
                 playerHp += 10;
-                BattlePhase();
+                MyTurn();
             }
             else if (choiceitem == "2")
             {
-                Console.WriteLine("");
                 Console.Clear();
-                BattleStats();
                 MyTurn();
             }
             else
             {
-                Console.WriteLine("");
                 Console.Clear();
                 Console.WriteLine("잘못 입력헀습니다. 다시 눌러주십시오");
-                Console.WriteLine("");
                 OpenInventory();
-            }
-        }
-
-        public void RandomEnemyCount()
-        {
-            int EnemyCount = random.Next(0, 4);
-
-            if (EnemyCount == 0)
-            {
-               
             }
         }
         public void BattleStats()
         {
             
-            Console.WriteLine("=======================");
+            Console.WriteLine("===============================");
             Console.WriteLine("                              ");
             Console.WriteLine("  당신의 체력 : " + playerHp.ToString("N1")  );
             Console.WriteLine("                              ");
-            Console.WriteLine("   적의 체력 : " + enemyHp.ToString("N1")    );
+            Console.WriteLine("  당신의 마력 : " + playerMp.ToString("N1"));
             Console.WriteLine("                              ");
-            Console.WriteLine("=======================");
+            Console.WriteLine($"  {enemyname}의 체력 : " + enemyHp.ToString("N1")    );
+            Console.WriteLine("                              ");
+            Console.WriteLine("===============================");
             Console.WriteLine("");
         }
-    }
+        private void Battle_Skill()    //스킬
+        {
+            float PlayerDamage = playerAttack * RandomDamage[random.Next(RandomDamage.Length)];
+            float MySkillAttack = PlayerDamage * 2 - enemyDeffense;
+            float MySkillAttack2 = PlayerDamage * 3 - enemyDeffense;
+
+            Console.Clear();
+            BattleStats();
+            Console.WriteLine("1. 강한공격 10Mp | 2. 초강력 베기 50Mp ");
+            Console.WriteLine("");
+            Console.Write("행동을 고르싶시오 >>   ");
+            string choiceskill = Console.ReadLine();
+            if (choiceskill == "1")
+            {
+               
+                if (playerMp >= 10)
+                {
+                    Console.Clear();
+                    Console.WriteLine($"당신은 적에게 강한공격을 써서 {MySkillAttack.ToString("N1")} 만큼의 데미지를 입혔습니다.");
+                    enemyHp -= MySkillAttack;
+                    playerMp -= 10;
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("당신은 마나가 부족하여 스킬을 쓸 수 없습니다.");
+                    MyTurn();
+                }
+            }
+            else if (choiceskill == "2")
+            {
+                if (playerMp >= 50)
+                {
+                    Console.Clear();
+                    Console.WriteLine($"당신은 적에게 초강력베기를 써서 {MySkillAttack2.ToString("N1")} 만큼의 데미지를 입혔습니다.");
+                    
+                    enemyHp -= MySkillAttack2;                              //향후 스킬을 넣을 계획
+                    playerMp -= 50;
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("당신은 마나가 부족하여 스킬을 쓸 수 없습니다.");
+                    MyTurn();
+                }
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("잘못 눌렀습니다.");
+                MyTurn();
+            }
+        }
+        public void MonsterAppearRandom()
+        {
+            int MonsterRandom = random.Next(0, 6);
+            switch (MonsterRandom)
+            {
+                case 0:
+                    Console.WriteLine("늑대가 나타났다!");
+                    enemyname = "늑대";
+                    enemyHp = 50;
+                    enemyAttack = 10;
+                    enemyDeffense = 0;
+                    enemyExp = 100;
+                    enemyGold = 200;
+                break;
+                case 1:
+                    Console.WriteLine("고블린이 나타났다!");
+                    enemyname = "고블린";
+                    enemyHp = 100;
+                    enemyAttack = 20;
+                    enemyDeffense = 2;
+                    enemyExp = 200;
+                    enemyGold = 300;
+                    break;
+                case 2:
+                    Console.WriteLine("유령이 나타났다!");
+                    enemyname = "유령";
+                    enemyHp = 80;
+                    enemyAttack = 20;
+                    enemyDeffense = 10;
+                    enemyExp = 200;
+                    enemyGold = 500;
+                    break;
+                case 3:
+                    Console.WriteLine("사무라이가 나타났다!");
+                    enemyname = "사무라이";
+                    enemyHp = 200;
+                    enemyAttack = 30;
+                    enemyDeffense = 5;
+                    enemyExp = 1000;
+                    enemyGold = 500;
+                    break;
+                case 4:
+                    Console.WriteLine("오크전사가 나타났다!");
+                    enemyname = "오크전사";
+                    enemyHp = 150;
+                    enemyAttack = 20;
+                    enemyDeffense = 10;
+                    enemyExp = 800;
+                    enemyGold = 600;
+                    break;
+                case 5:
+                    Console.WriteLine("다크드래곤이 나타났다!");
+                    enemyname = "다크드래곤";
+                    enemyHp = 999;
+                    enemyAttack = 35;
+                    enemyDeffense = 15;
+                    enemyExp = 9999;
+                    enemyGold = 9999;
+                    break;
+            }
+        }
+    }   
 }
