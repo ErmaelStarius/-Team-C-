@@ -76,7 +76,7 @@ namespace Text_RPG
                 Console.WriteLine($"적은 당신에게 {EnemyDamage.ToString("N1")} 만큼의 데미지를 입혔습니다.");
                 
             }
-            else
+            else 
             {
                 Battle_Reward();
             }
@@ -90,6 +90,10 @@ namespace Text_RPG
 
         private void Battle_Reward() //보상
         {
+            if (enemyname == "늑대")
+            {
+                questManager.KillWolfCount();
+            }
             Console.Clear();
             Console.WriteLine("");
             Console.WriteLine("당신은 적을 쓰러뜨렸습니다!!"); //적을 쓰러뜨림_보상추가 예정
@@ -193,7 +197,7 @@ namespace Text_RPG
             string choiceskill = Console.ReadLine();
             if (choiceskill == "1")
             {
-               z
+               
                 if (playerMp >= 10)
                 {
                     Console.Clear();

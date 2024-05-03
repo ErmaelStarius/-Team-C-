@@ -4,19 +4,20 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Text_RPG.QuestManager;
 
 namespace Text_RPG
 {
     internal class Main
     {
+        
         Images images = new Images();
 
         public void MainMenu(Player player)
         {
             Console.Clear();
             Dialogue_Menu menu = new Dialogue_Menu();
-
-            ConsoleKeyInfo mainmenu = images.Main(menu._Name, menu._MainMenu_Text, menu._MainMenu_Choice_01, menu._MainMenu_Choice_02, menu._MainMenu_Choice_03);
+            ConsoleKeyInfo mainmenu = images.Main(menu._Name, menu._MainMenu_Text, menu._MainMenu_Option_01, menu._MainMenu_Option_02, menu._MainMenu_Option_03);
 
             while (true)
             {
@@ -30,11 +31,15 @@ namespace Text_RPG
                 }
                 else if (mainmenu.Key == ConsoleKey.C)
                 {
-
+                    MainMenu(player);
                 }
-                else if (mainmenu.Key == ConsoleKey.D1)
+                else if (mainmenu.Key == ConsoleKey.D1 || mainmenu.Key == ConsoleKey.NumPad1)
                 {
                     new Status().StatusMenu(player);
+                }
+                else if (mainmenu.Key == ConsoleKey.D5 || mainmenu.Key == ConsoleKey.NumPad5)
+                {
+                    new QuestManager().QuestMenu(player);
                 }
                 else
                 {
@@ -48,7 +53,7 @@ namespace Text_RPG
                     {
                         Console.Clear();
 
-                        mainmenu = images.Main(menu._Name, menu._MainMenu_Text, menu._MainMenu_Choice_01, menu._MainMenu_Choice_02, menu._MainMenu_Choice_03);
+                        mainmenu = images.Main(menu._Name, menu._MainMenu_Text, menu._MainMenu_Option_01, menu._MainMenu_Option_02, menu._MainMenu_Option_03);
                     }
 
                 }

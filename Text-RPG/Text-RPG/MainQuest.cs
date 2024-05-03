@@ -6,12 +6,13 @@ using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using Text_RPG;
 
-//  몬스터 카운트 하기, 완료 후 보상받기
+//  몬스터 카운트 하기, 완료 후 보상받기 battle 이랑 quest랑 연결
 namespace Text_RPG
 {
+    
     public class QuestManager
     {
-
+        Main main = new Main();
         //퀘스트 목록
         QuestDifficultyReward KillWolf = new QuestDifficultyReward(10, 50); // 난이도 별 보상 (변수의 끝 영어가 난이도)
         QuestDifficultyReward KillGoblin = new QuestDifficultyReward(100, 500);
@@ -42,19 +43,22 @@ namespace Text_RPG
         bool isGoblinQuest = false;
 
 
-        int wolfCount = 3;
+        int wolfCount = 0; //퍼블릭 or 메소드
         int totalWolfCount = 3;
-        int goblinCount = 5;
+        int goblinCount = 0;
         int totalGoblinCount = 5;
 
-        public void QuestMenu()
+        public void KillWolfCount()
+        {
+            wolfCount++;
+        }
+
+
+        public void QuestMenu(Player player)
         {
             Console.Clear(); //화면정리 ( \n 한 줄 띄우기 )
-
             Console.WriteLine("\n ※ 퀘스트 목록 ※\n\n\n");
             Console.WriteLine(" ─────────────────────\n");
-
-
             Console.Write(" 1 - 늑대 퇴치 (D급)");
             Console.ForegroundColor = ConsoleColor.Magenta;
             if (isWolfAccept == false)
@@ -72,6 +76,7 @@ namespace Text_RPG
 
             Console.Write(" 2 - 고블린 잡기 (B급)");
             Console.ForegroundColor = ConsoleColor.Magenta;
+            
             if (isGoblinAccept == false)
             {
                 Console.WriteLine(" 진행 중");
@@ -91,13 +96,13 @@ namespace Text_RPG
 
             switch (choiceQuest)
             {
-                case 0: QuestMenu(); break;
-                case 1: QuestKillWolf(); break;
-                case 2: QuestKillGoblin(); break;
+                case 0: main.MainMenu(player); break; //메인화면으로 가게하기
+                case 1: QuestKillWolf(player); break;
+                case 2: QuestKillGoblin(player); break;
             }
         }
 
-        public void QuestKillWolf()
+        public void QuestKillWolf(Player player)
         {
 
             // (wolf.MonsterHp < 1)
@@ -122,7 +127,7 @@ namespace Text_RPG
 
             switch (QuestInformation.MenuChoice(0, 2))
             {
-                case 0: QuestMenu(); break;
+                case 0: QuestMenu(player); break;
                 case 1:
                     {
                         isWolfAccept = false;
@@ -139,7 +144,7 @@ namespace Text_RPG
 
                         switch (QuestInformation.MenuChoice(0, 0))
                         {
-                            case 0: QuestMenu(); break;
+                            case 0: QuestMenu(player); break;
                         }
                     }
                     break;
@@ -159,14 +164,14 @@ namespace Text_RPG
 
                         switch (QuestInformation.MenuChoice(0, 0))
                         {
-                            case 0: QuestMenu(); break;
+                            case 0: QuestMenu(player); break;
                         }
                     }
                     break;
             }
         }
 
-        public void QuestKillGoblin()
+        public void QuestKillGoblin(Player player)
         {
 
 
@@ -190,7 +195,7 @@ namespace Text_RPG
 
             switch (QuestInformation.MenuChoice(0, 2))
             {
-                case 0: QuestMenu(); break;
+                case 0: QuestMenu(player); break;
                 case 1:
                     {
                         isGoblinAccept = false;
@@ -207,7 +212,7 @@ namespace Text_RPG
 
                         switch (QuestInformation.MenuChoice(0, 0))
                         {
-                            case 0: QuestMenu(); break;
+                            case 0: QuestMenu(player); break;
                         }
                     }
                     break;
@@ -228,11 +233,11 @@ namespace Text_RPG
 
                         switch (QuestInformation.MenuChoice(0, 0))
                         {
-                            case 0: QuestMenu(); break;
+                            case 0: QuestMenu(player); break;
                         }
                         break;
                     }
-
+                        
             }
         }
     }
