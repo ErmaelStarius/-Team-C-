@@ -14,22 +14,10 @@
                     return choice;
                 }
                 Console.WriteLine("잘못된 입력입니다. 다시 시도해주세요.");
+                Console.Write(">> ");
             }
         }
 
-        public static int CharacterChoice(int min, int max)
-        {
-            int YesNo = ConsoleUtility.PromptChoice(1, 2);
-            
-            switch (YesNo)
-            {
-                case 1:
-                    break;
-                case 2:
-                    return YesNo;
-            }
-            return YesNo;
-        }
 
         internal static void ShowTitle(string title)
         {
