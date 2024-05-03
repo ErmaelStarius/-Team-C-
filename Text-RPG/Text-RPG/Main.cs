@@ -11,42 +11,38 @@ namespace Text_RPG
     {
         Images images = new Images();
 
-        public void MainMenu()
+        public void MainMenu(Player player)
         {
-            Dialogue dialogue = new Dialogue();
+            Console.Clear();
             Dialogue_Menu menu = new Dialogue_Menu();
-            Battle battle = new Battle();
-            QuestManager questManager = new QuestManager();
 
-            ConsoleKeyInfo mainmenu = images.Main(menu._Name, menu._MainMenu_Text, menu._MainMenu_Option_01, menu._MainMenu_Option_02, menu._MainMenu_Option_03);
+            ConsoleKeyInfo mainmenu = images.Main(menu._Name, menu._MainMenu_Text, menu._MainMenu_Choice_01, menu._MainMenu_Choice_02, menu._MainMenu_Choice_03);
 
             while (true)
             {
                 if (mainmenu.Key == ConsoleKey.Z)
                 {
-                    // 대화(퀘스트)
-                    dialogue.Chapter_01();
+
                 }
                 else if (mainmenu.Key == ConsoleKey.X)
                 {
-                    // 상점(판매/구매)
-                    
+
                 }
                 else if (mainmenu.Key == ConsoleKey.C)
                 {
-                    // 전투
-                    Console.Clear();
-                    battle.BattlePhase();
+
                 }
                 else if (mainmenu.Key == ConsoleKey.D5 || mainmenu.Key == ConsoleKey.NumPad5)
                 {
                     // 퀘스트(목록/내용)
                     Console.Clear();
                     questManager.QuestMenu();
+                else if (mainmenu.Key == ConsoleKey.D1)
+                {
+                    new Status().StatusMenu(player);
                 }
                 else
                 {
-                    // 에러
                     Console.Clear();
 
                     images.Error();
@@ -57,7 +53,7 @@ namespace Text_RPG
                     {
                         Console.Clear();
 
-                        mainmenu = images.Main(menu._Name, menu._MainMenu_Text, menu._MainMenu_Option_01, menu._MainMenu_Option_02, menu._MainMenu_Option_03);
+                        mainmenu = images.Main(menu._Name, menu._MainMenu_Text, menu._MainMenu_Choice_01, menu._MainMenu_Choice_02, menu._MainMenu_Choice_03);
                     }
 
                 }

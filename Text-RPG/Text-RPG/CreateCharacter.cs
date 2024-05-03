@@ -9,40 +9,61 @@ namespace Text_RPG
     internal class CreateCharacter
     {
         Images images = new Images();
-
+        Player player;
         //캐릭터 생성
-        public string NewCharacter()
+        public void NewCharacter()
         {
             Console.Clear();
             //images.CharacterName();
+            Console.WriteLine("**********************************************\n");
+            Console.WriteLine("플레이어명: \n");
             Console.WriteLine("**********************************************");
-            Console.WriteLine("플레이어명: ");
-            Console.WriteLine("**********************************************");
-            Console.SetCursorPosition(11,1);
+            Console.SetCursorPosition(12,2);
             string playerName = Console.ReadLine();
-            Newjob("");
-            if (playerName != null )
-            {
-                return playerName;
-            }
-            else
-            {
-                Console.WriteLine("이름을 입력해주세요");
-            }
-            return playerName;
+
             
+            //플레이어명 기입 검증
+            if (string.IsNullOrEmpty(playerName))
+            {
+                Console.Clear();
+                Console.WriteLine("플레이어명을 입력해주세요");
+                Thread.Sleep(1000);
+                NewCharacter();
+                
+            }
+            else 
+            {
+                Console.Clear();
+                Console.WriteLine("**********************************************\n");
+                Console.WriteLine($"   플레이어명: {playerName}으로 하시겠습니까?\n");
+                Console.WriteLine("               1.예 2.아니오                  \n");
+                Console.WriteLine("**********************************************");
+                Console.Write(">> ");
+                int choice = ConsoleUtility.PromptChoice(1, 2);
+
+                switch (choice)
+                {
+                    case 1:
+                        Newjob(playerName);
+                        break;
+                    case 2:
+                        NewCharacter();
+                        break;
+                }
+            }
         }
 
         //직업 선택
         private void Newjob(string playerName)
         {
-            //Main main = new Main();
+            
 
             Console.Clear();
             //images.CharaterSelect
+            Console.WriteLine("**********************************************\n");
+            Console.WriteLine($"      1.전사, 2.궁수, 3.마법사, 4.사제       \n");
             Console.WriteLine("**********************************************");
-            Console.WriteLine("1.전사, 2.궁수, 3.마법사, 4.사제 ");
-            Console.WriteLine("**********************************************");
+            Console.Write(">> ");
             int choice = ConsoleUtility.PromptChoice(1, 4);
 
             switch (choice)
@@ -52,50 +73,95 @@ namespace Text_RPG
                 case 1:
                     //images.CharaterSelect
                     Console.Clear();
+                    Console.WriteLine("**********************************************\n");
+                    Console.WriteLine("          '전사'로 확정 하시겠습니까?         \n");
+                    Console.WriteLine("               1.예, 2.아니오                 \n");
                     Console.WriteLine("**********************************************");
-                    Console.WriteLine("확정하시겠습니까?");
-                    Console.WriteLine("**********************************************");
-                    Console.WriteLine("1.예, 2.아니오");
+                    Console.Write(">> ");
 
-                    ConsoleUtility.CharacterChoice(1, 2);
-                    Player.InitializeGame(playerName, "전사", 25, 25, 200, 100);
+                    int warriorSelect = ConsoleUtility.PromptChoice(1, 2);
+                    
+                    if (warriorSelect == 1)
+                    {
+                        Console.Clear();
+                        player = new Player(playerName, "전사", 1, 0, 25, 25, 200, 100, 1500);
+                        new Main().MainMenu(player);
+                    }
+                    else
+                    {
+                        Newjob(playerName);
+                    }
+
                     break;
                 //궁수
                 case 2:
                     //images.CharaterSelect
                     Console.Clear();
+                    Console.WriteLine("**********************************************\n");
+                    Console.WriteLine("          '궁수'로 확정 하시겠습니까?         \n");
+                    Console.WriteLine("               1.예, 2.아니오                 \n");
                     Console.WriteLine("**********************************************");
-                    Console.WriteLine("확정하시겠습니까?");
-                    Console.WriteLine("**********************************************");
-                    Console.WriteLine("1.예, 2.아니오");
+                    Console.Write(">> ");
 
-                    ConsoleUtility.CharacterChoice(1, 2);
-                    Player.InitializeGame(playerName, "궁수", 35, 15, 150, 150);
+                    int archerSelect = ConsoleUtility.PromptChoice(1, 2);
+                    
+                    if (archerSelect == 1)
+                    {
+                        player = new Player(playerName, "궁수", 1, 0, 35, 15, 150, 150, 1500);
+                        Console.Clear();
+                        new Main().MainMenu(player);
+                    }
+                    else
+                    {
+                        Newjob(playerName);
+                    }
                     break;
                 //마법사
                 case 3:
                     //images.CharaterSelect
                     Console.Clear();
+                    Console.WriteLine("**********************************************\n");
+                    Console.WriteLine("          '마법사'로 확정 하시겠습니까?         \n");
+                    Console.WriteLine("               1.예, 2.아니오                 \n");
                     Console.WriteLine("**********************************************");
-                    Console.WriteLine("확정하시겠습니까?");
-                    Console.WriteLine("**********************************************");
-                    Console.WriteLine("1.예, 2.아니오");
+                    Console.Write(">> ");
 
-                    ConsoleUtility.CharacterChoice(1, 2);
-                    Player.InitializeGame(playerName, "마법사", 5, 5, 100, 500);
+                    int wizardSelect = ConsoleUtility.PromptChoice(1, 2);
+
+                    if (wizardSelect == 1)
+                    {
+                        player = new Player(playerName, "마법사", 1, 0, 5, 5, 100, 500, 1500);
+                    Console.Clear();
+                    new Main().MainMenu(player);
+                    }
+                    else
+                    {
+                        Newjob(playerName);
+                    }
                     break;
                 //사제
                 case 4:
                     //images.CharaterSelect
                     Console.Clear();
+                    Console.WriteLine("**********************************************\n");
+                    Console.WriteLine("          '사제'로 확정 하시겠습니까?         \n");
+                    Console.WriteLine("               1.예, 2.아니오                 \n");
                     Console.WriteLine("**********************************************");
-                    Console.WriteLine("확정하시겠습니까?");
-                    Console.WriteLine("**********************************************");
-                    Console.WriteLine("1.예, 2.아니오");
+                    Console.Write(">> ");
 
-                    ConsoleUtility.CharacterChoice(1, 2);
-                    Player.InitializeGame(playerName, "사제", 10, 10, 100, 100);
-                    break;
+                    int priestsSelect = ConsoleUtility.PromptChoice(1, 2);
+
+                    if (priestsSelect == 1)
+                    {
+                        player = new Player(playerName, "사제", 1, 0, 10, 10, 100, 100, 1500);
+                        Console.Clear();
+                        new Main().MainMenu(player);
+                    }
+                    else
+                    {
+                        Newjob(playerName);
+                    }
+                break;
             }
         }
     }      
