@@ -5,7 +5,7 @@ namespace Text_RPG
 {
         internal class Program
         {
-            private Player player;
+            
             public static void Main(string[] args)
             {
                
@@ -16,7 +16,7 @@ namespace Text_RPG
             private static void StartGame()
             {
                 new Intro().IntroScene();
-                //test
+                
             }
         }
 }
