@@ -5,15 +5,11 @@ namespace Text_RPG
 {
     internal class Program
     {
-        private Player player;
+        static private Player player;
         public static void Main(string[] args)
         {
-            Title intro = new Title();
-            intro.TitleScene();
-       
-            Main main = new Main();
-            main.MainMenu();
-            
+            Intro intro = new Intro();
+            intro.IntroScene();
         }
     }
 }

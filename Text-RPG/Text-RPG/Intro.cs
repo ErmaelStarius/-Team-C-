@@ -20,7 +20,6 @@ namespace Text_RPG
                 // 조건
                 if (startkey.Key == ConsoleKey.Z)
                 {
-                    Console.Clear();
                     images.Loading();
                     new CreateCharacter().NewCharacter();
                     break;

@@ -10,13 +10,14 @@ namespace Text_RPG
     internal class Main
     {
         Images images = new Images();
+        QuestManager questManager = new QuestManager();
 
         public void MainMenu(Player player)
         {
             Console.Clear();
             Dialogue_Menu menu = new Dialogue_Menu();
 
-            ConsoleKeyInfo mainmenu = images.Main(menu._Name, menu._MainMenu_Text, menu._MainMenu_Choice_01, menu._MainMenu_Choice_02, menu._MainMenu_Choice_03);
+            ConsoleKeyInfo mainmenu = images.Main(menu._Name, menu._MainMenu_Text, menu._MainMenu_Option_01, menu._MainMenu_Option_02, menu._MainMenu_Option_03);
 
             while (true)
             {
@@ -37,9 +38,10 @@ namespace Text_RPG
                     // 퀘스트(목록/내용)
                     Console.Clear();
                     questManager.QuestMenu();
+                }
                 else if (mainmenu.Key == ConsoleKey.D1)
                 {
-                    new Status().StatusMenu(player);
+                    
                 }
                 else
                 {
@@ -53,7 +55,7 @@ namespace Text_RPG
                     {
                         Console.Clear();
 
-                        mainmenu = images.Main(menu._Name, menu._MainMenu_Text, menu._MainMenu_Choice_01, menu._MainMenu_Choice_02, menu._MainMenu_Choice_03);
+                        mainmenu = images.Main(menu._Name, menu._MainMenu_Text, menu._MainMenu_Option_01, menu._MainMenu_Option_02, menu._MainMenu_Option_03);
                     }
 
                 }

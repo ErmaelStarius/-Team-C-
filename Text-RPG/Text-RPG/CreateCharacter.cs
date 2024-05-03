@@ -83,8 +83,8 @@ namespace Text_RPG
                     
                     if (warriorSelect == 1)
                     {
-                        Console.Clear();
                         player = new Player(playerName, "전사", 1, 0, 25, 25, 200, 100, 1500);
+                        Console.Clear();
                         new Main().MainMenu(player);
                     }
                     else
@@ -131,8 +131,8 @@ namespace Text_RPG
                     if (wizardSelect == 1)
                     {
                         player = new Player(playerName, "마법사", 1, 0, 5, 5, 100, 500, 1500);
-                    Console.Clear();
-                    new Main().MainMenu(player);
+                        Console.Clear();
+                        new Main().MainMenu(player);
                     }
                     else
                     {
