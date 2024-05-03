@@ -2,6 +2,7 @@
 {
     public class Player
     {
+        
         //생성자이후에 Set하지 않겠다! => 읽기 전용이라는 말
         public string Name { get; } //캐릭터명
         public string Job { get; } //직업

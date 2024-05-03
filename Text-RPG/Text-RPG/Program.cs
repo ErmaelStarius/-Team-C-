@@ -9,14 +9,13 @@ namespace Text_RPG
             public static void Main(string[] args)
             {
                
-               StartGame();
+               //StartGame();
 
             }
 
             private static void StartGame()
             {
-                new Intro().IntroScene();
-                
+                //new Intro().IntroScene();
             }
         }
 }
