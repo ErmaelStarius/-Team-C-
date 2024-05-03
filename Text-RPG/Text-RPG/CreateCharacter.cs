@@ -59,8 +59,6 @@ namespace Text_RPG
 
                     ConsoleUtility.CharacterChoice(1, 2);
                     Player.InitializeGame(playerName, "전사", 25, 25, 200, 100);
-                    Console.Clear();
-                    new Main().MainMenu();
                     break;
                 //궁수
                 case 2:
@@ -73,8 +71,6 @@ namespace Text_RPG
 
                     ConsoleUtility.CharacterChoice(1, 2);
                     Player.InitializeGame(playerName, "궁수", 35, 15, 150, 150);
-                    Console.Clear();
-                    new Main().MainMenu();
                     break;
                 //마법사
                 case 3:
@@ -87,8 +83,6 @@ namespace Text_RPG
 
                     ConsoleUtility.CharacterChoice(1, 2);
                     Player.InitializeGame(playerName, "마법사", 5, 5, 100, 500);
-                    Console.Clear();
-                    new Main().MainMenu();
                     break;
                 //사제
                 case 4:
@@ -101,8 +95,6 @@ namespace Text_RPG
 
                     ConsoleUtility.CharacterChoice(1, 2);
                     Player.InitializeGame(playerName, "사제", 10, 10, 100, 100);
-                    Console.Clear();
-                    new Main().MainMenu();
                     break;
             }
         }

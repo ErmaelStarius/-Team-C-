@@ -38,12 +38,6 @@ namespace Text_RPG
                     Console.Clear();
                     battle.BattlePhase();
                 }
-                else if (mainmenu.Key == ConsoleKey.D6 || mainmenu.Key == ConsoleKey.NumPad6)
-                {
-                    // 캐릭터(생성/직업)
-                    new CreateCharacter().NewCharacter();
-                    ConsoleUtility.CharacterChoice(1, 2);
-                }
                 else if (mainmenu.Key == ConsoleKey.D5 || mainmenu.Key == ConsoleKey.NumPad5)
                 {
                     // 퀘스트(목록/내용)

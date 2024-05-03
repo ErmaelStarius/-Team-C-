@@ -6,28 +6,34 @@ using System.Threading.Tasks;
 
 namespace Text_RPG
 {
-    internal class Intro
+    internal class Title
     {
         Images images = new Images();
+        Intro intro = new Intro();
 
-        public void IntroScene()
+        public void TitleScene()
         {
-            images.Intro();
+            images.Title();
+
             ConsoleKeyInfo startkey = Console.ReadKey(true);
 
             do
             {
-                // 새로하기 > 로딩화면
+                // 게임시작 > 로딩화면
                 if (startkey.Key == ConsoleKey.Z)
                 {
-                    images.Loading();
+                    Console.Clear();
+                    intro.IntroScene();
                     break;
 
                 }
-                // 이어하기
+                // 게임종료
                 else if (startkey.Key == ConsoleKey.X)
                 {
-
+                    Console.Clear();
+                    images.GameOver();
+                    Console.ReadKey(true);
+                    Environment.Exit(0);
                     break;
                 }
                 // 에러화면
