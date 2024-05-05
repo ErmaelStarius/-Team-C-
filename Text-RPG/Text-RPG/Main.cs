@@ -8,12 +8,12 @@ using static Text_RPG.QuestManager;
 
 namespace Text_RPG
 {
-    internal class Main
+    public class Main
     {
         
         Images images = new Images();
 
-        public void MainMenu(Player player)
+        public void MainMenu(Player player, GameManager gameManager)
         {
             Console.Clear();
             Dialogue_Menu menu = new Dialogue_Menu();
@@ -31,15 +31,15 @@ namespace Text_RPG
                 }
                 else if (mainmenu.Key == ConsoleKey.C)
                 {
-                    MainMenu(player);
+                    MainMenu(player, gameManager);
                 }
                 else if (mainmenu.Key == ConsoleKey.D1 || mainmenu.Key == ConsoleKey.NumPad1)
                 {
-                    new Status().StatusMenu(player);
+                    new Status().StatusMenu(player, gameManager);
                 }
                 else if (mainmenu.Key == ConsoleKey.D5 || mainmenu.Key == ConsoleKey.NumPad5)
                 {
-                    new QuestManager().QuestMenu(player);
+                    gameManager.questManager.QuestMenu(player, gameManager);
                 }
                 else
                 {

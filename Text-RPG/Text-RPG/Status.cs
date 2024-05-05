@@ -7,7 +7,7 @@ namespace Text_RPG
         CreateCharacter name = new CreateCharacter();
         
         //상태창
-        public void StatusMenu(Player player)
+        public void StatusMenu(Player player, GameManager gameManager)
         {
 
             Console.Clear();
@@ -32,7 +32,7 @@ namespace Text_RPG
             switch (ConsoleUtility.PromptChoice(0, 0))
             {
                 case 0:
-                    new Main().MainMenu(player);
+                    new Main().MainMenu(player, gameManager);
                     break;
             }
         }

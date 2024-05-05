@@ -54,7 +54,7 @@ namespace Text_RPG
         }
 
 
-        public void QuestMenu(Player player)
+        public void QuestMenu(Player player, GameManager gameManager)
         {
             Console.Clear(); //화면정리 ( \n 한 줄 띄우기 )
             Console.WriteLine("\n ※ 퀘스트 목록 ※\n\n\n");
@@ -96,13 +96,13 @@ namespace Text_RPG
 
             switch (choiceQuest)
             {
-                case 0: main.MainMenu(player); break; //메인화면으로 가게하기
-                case 1: QuestKillWolf(player); break;
-                case 2: QuestKillGoblin(player); break;
+                case 0: gameManager.main.MainMenu(player, gameManager); break; //메인화면으로 가게하기
+                case 1: QuestKillWolf(player, gameManager); break;
+                case 2: QuestKillGoblin(player, gameManager); break;
             }
         }
 
-        public void QuestKillWolf(Player player)
+        public void QuestKillWolf(Player player, GameManager gameManager)
         {
 
             // (wolf.MonsterHp < 1)
@@ -127,7 +127,7 @@ namespace Text_RPG
 
             switch (QuestInformation.MenuChoice(0, 2))
             {
-                case 0: QuestMenu(player); break;
+                case 0: QuestMenu(player, gameManager); break;
                 case 1:
                     {
                         isWolfAccept = false;
@@ -144,7 +144,7 @@ namespace Text_RPG
 
                         switch (QuestInformation.MenuChoice(0, 0))
                         {
-                            case 0: QuestMenu(player); break;
+                            case 0: QuestMenu(player, gameManager); break;
                         }
                     }
                     break;
@@ -164,14 +164,14 @@ namespace Text_RPG
 
                         switch (QuestInformation.MenuChoice(0, 0))
                         {
-                            case 0: QuestMenu(player); break;
+                            case 0: QuestMenu(player, gameManager); break;
                         }
                     }
                     break;
             }
         }
 
-        public void QuestKillGoblin(Player player)
+        public void QuestKillGoblin(Player player, GameManager gameManager)
         {
 
 
@@ -195,7 +195,7 @@ namespace Text_RPG
 
             switch (QuestInformation.MenuChoice(0, 2))
             {
-                case 0: QuestMenu(player); break;
+                case 0: QuestMenu(player, gameManager); break;
                 case 1:
                     {
                         isGoblinAccept = false;
@@ -212,7 +212,7 @@ namespace Text_RPG
 
                         switch (QuestInformation.MenuChoice(0, 0))
                         {
-                            case 0: QuestMenu(player); break;
+                            case 0: QuestMenu(player, gameManager); break;
                         }
                     }
                     break;
@@ -233,7 +233,7 @@ namespace Text_RPG
 
                         switch (QuestInformation.MenuChoice(0, 0))
                         {
-                            case 0: QuestMenu(player); break;
+                            case 0: QuestMenu(player, gameManager); break;
                         }
                         break;
                     }
