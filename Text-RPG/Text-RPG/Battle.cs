@@ -12,7 +12,7 @@ namespace Text_RPG
         //현재 플레이어와 적의 수치는 임시로 되어있으므로 향후 수정할 계획
 
 
-        QuestManager questManager = new QuestManager();
+        QuestManager questManager;
         string playername;
         float playerHp;//임시 플레이어 Hp
         float playerAttack;        
@@ -32,6 +32,7 @@ namespace Text_RPG
         
         public void BattlePhase(Player player, QuestGameManager gameManager)   //전투과정
         {
+            questManager = gameManager.questManager;
             playername = player.Name;
             playerHp = player.Hp;
             playerAttack = player.Atk;
@@ -52,7 +53,7 @@ namespace Text_RPG
                     break;
                 }
                 ContinueTurn();
-                EnemyTurn();  //적의턴 그러고 적이 죽으면 다시 플레이어턴으로 돌아간다.
+                EnemyTurn(player, gameManager);  //적의턴 그러고 적이 죽으면 다시 플레이어턴으로 돌아간다.
 
             }
         }
@@ -65,7 +66,7 @@ namespace Text_RPG
             Console.Clear();            
         }
 
-        private void EnemyTurn()
+        private void EnemyTurn(Player player, QuestGameManager gameManager)
         {
             
             float EnemyDamage = enemyAttack * RandomDamage[random.Next(RandomDamage.Length)] - playerDeffense;
@@ -93,22 +94,26 @@ namespace Text_RPG
 
         public float Battle_Reward() //보상
         {
+            if (enemyHp < 0)
+            {
+                if (enemyname == "늑대")
+                {
+                    questManager.KillWolfCount();
+                }
+                if (enemyname == "고블린")
+                {
+                    questManager.KillGoblinCount();
+                }
+                Console.Clear();
+                Console.WriteLine("");
+                Console.WriteLine("당신은 적을 쓰러뜨렸습니다!!"); //적을 쓰러뜨림_보상추가 예정
+                Console.WriteLine($"당신은 {enemyExp} 만큼의 경험치와 {enemyGold}를 획득했습니다!"); //적을 쓰러뜨림_보상추가 예정
+            }
+                playerExp += enemyExp;
+                playerGold += enemyGold;
+                return playerExp + playerGold;
 
-            if(enemyHp < 0)
-            {
-                questManager.KillWolfCount();
-            }
-            if (enemyname == "고블린")
-            {
-                questManager.KillGoblinCount();
-            }
-            Console.Clear();
-            Console.WriteLine("");
-            Console.WriteLine("당신은 적을 쓰러뜨렸습니다!!"); //적을 쓰러뜨림_보상추가 예정
-            Console.WriteLine($"당신은 {enemyExp} 만큼의 경험치와 {enemyGold}를 획득했습니다!"); //적을 쓰러뜨림_보상추가 예정
-            playerExp += enemyExp;
-            playerGold += enemyGold;
-            return playerExp + playerGold;
+
         }
 
         public void MyTurn(Player player, QuestGameManager gameManager)  //플레이어의 차례
