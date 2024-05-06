@@ -86,7 +86,7 @@ namespace Text_RPG
                         Console.Clear();
                         player = new Player(playerName, "전사", 1, 0, 25, 25, 200, 100, 1500);
                         // new Main().MainMenu(player);
-                        GameManager gameManager = new GameManager();
+                        QuestGameManager gameManager = new QuestGameManager();
                         gameManager.main.MainMenu(player, gameManager);
                     }
                     else
@@ -111,7 +111,7 @@ namespace Text_RPG
                     {
                         player = new Player(playerName, "궁수", 1, 0, 35, 15, 150, 150, 1500);
                         Console.Clear();
-                        GameManager gameManager = new GameManager();
+                        QuestGameManager gameManager = new QuestGameManager();
                         gameManager.main.MainMenu(player, gameManager);
                     }
                     else
@@ -135,7 +135,7 @@ namespace Text_RPG
                     {
                         player = new Player(playerName, "마법사", 1, 0, 5, 5, 100, 500, 1500);
                     Console.Clear();
-                        GameManager gameManager = new GameManager();
+                        QuestGameManager gameManager = new QuestGameManager();
                         gameManager.main.MainMenu(player, gameManager);
                     }
                     else
@@ -159,7 +159,7 @@ namespace Text_RPG
                     {
                         player = new Player(playerName, "사제", 1, 0, 10, 10, 100, 100, 1500);
                         Console.Clear();
-                        GameManager gameManager = new GameManager();
+                        QuestGameManager gameManager = new QuestGameManager();
                         gameManager.main.MainMenu(player, gameManager);
                     }
                     else

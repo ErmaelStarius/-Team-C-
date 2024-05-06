@@ -7,7 +7,7 @@ namespace Text_RPG
         CreateCharacter name = new CreateCharacter();
         
         //상태창
-        public void StatusMenu(Player player, GameManager gameManager)
+        public void StatusMenu(Player player, QuestGameManager gameManager)
         {
 
             Console.Clear();

@@ -54,7 +54,7 @@ namespace Text_RPG
         }
 
 
-        public void QuestMenu(Player player, GameManager gameManager)
+        public void QuestMenu(Player player, QuestGameManager gameManager)
         {
             Console.Clear(); //화면정리 ( \n 한 줄 띄우기 )
             Console.WriteLine("\n ※ 퀘스트 목록 ※\n\n\n");
@@ -102,7 +102,7 @@ namespace Text_RPG
             }
         }
 
-        public void QuestKillWolf(Player player, GameManager gameManager)
+        public void QuestKillWolf(Player player, QuestGameManager gameManager)
         {
 
             // (wolf.MonsterHp < 1)
@@ -171,7 +171,7 @@ namespace Text_RPG
             }
         }
 
-        public void QuestKillGoblin(Player player, GameManager gameManager)
+        public void QuestKillGoblin(Player player, QuestGameManager gameManager)
         {
 
 

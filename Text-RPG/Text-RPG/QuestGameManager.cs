@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Text_RPG
 {
-    public class GameManager
+    public class QuestGameManager
     {
         public Main main;
         public QuestManager questManager;
 
-        public GameManager()
+        public QuestGameManager()
         {
             main = new Main();
             questManager = new QuestManager();

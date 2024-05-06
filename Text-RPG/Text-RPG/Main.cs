@@ -13,7 +13,7 @@ namespace Text_RPG
         
         Images images = new Images();
 
-        public void MainMenu(Player player, GameManager gameManager)
+        public void MainMenu(Player player, QuestGameManager gameManager)
         {
             Console.Clear();
             Dialogue_Menu menu = new Dialogue_Menu();
