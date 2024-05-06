@@ -10,7 +10,7 @@ namespace Text_RPG
     internal class GameManager
     {
         Images images = new Images();
-        
+       public Main main = new Main();
 
         public void StartGame()
         {

@@ -11,7 +11,7 @@ namespace Text_RPG
 {
     public class QuestManager
     {
-        Main main = new Main();
+        
         //퀘스트 목록
         QuestDifficultyReward KillWolf = new QuestDifficultyReward(10, 50); // 난이도 별 보상 (변수의 끝 영어가 난이도)
         QuestDifficultyReward KillGoblin = new QuestDifficultyReward(100, 500);
@@ -50,6 +50,10 @@ namespace Text_RPG
         public void KillWolfCount()
         {
             wolfCount++;
+        }
+        public void KillGoblinCount()
+        {
+            goblinCount++;
         }
 
         public void QuestMenu(Player player, QuestGameManager gameManager)
@@ -108,10 +112,10 @@ namespace Text_RPG
 
             Console.WriteLine("\n 늑대를 잡아라 (등급 : D급)\n\n");
             Console.WriteLine(" - 늑대 ( " + wolfCount + " / " + totalWolfCount + " )\n\n");
-            if (wolf.MonsterHp < 1)  // Battle에서 enemyHp가 0이 될때 카운트를 한다. 그러려면 Battle 에서 MonsterHp를 가져와야한다
-            {                       // 아니면 다른 카운트 방법이 있을까?
-                wolfCount++;
-            }
+            //if (wolf.MonsterHp < 1)  // Battle에서 enemyHp가 0이 될때 카운트를 한다. 그러려면 Battle 에서 MonsterHp를 가져와야한다
+            //{                       // 아니면 다른 카운트 방법이 있을까?
+            //    wolfCount++;
+            //}
             Console.WriteLine(" - 보상 -\n");
             Console.WriteLine(" Gold : " + KillWolf.QuestGold + ", Exp : " + KillWolf.QuestExp);
             Console.WriteLine(" " + oldSword.ItemName + " / 공격력 : " + oldSword.ItemAtk + " , 판매가격 : " + oldSword.ItemPrice + "\n");
@@ -175,7 +179,7 @@ namespace Text_RPG
             Console.Clear(); //화면정리
 
             Console.WriteLine("\n 고블린을 잡아라 (등급 : B급)\n\n");
-            Console.WriteLine(" - 고블린 ( " + goblinCount + " / " + totalGoblinCount + ")\n\n");
+            Console.WriteLine(" - 고블린 ( " + goblinCount + " / " + totalGoblinCount + " )\n\n");
             if (goblin.MonsterHp < 1) // Battle에서 enemyHp가 0이 될때 카운트를 한다.
             {
                 goblinCount++;
@@ -220,8 +224,8 @@ namespace Text_RPG
 
                         Console.Clear(); //화면정리 
 
-                        Console.WriteLine("\n 늑대를 잡아라 (등급 : D급)\n\n");
-                        Console.WriteLine(" - 늑대 ( " + wolfCount + " / " + totalWolfCount + " )\n\n");
+                        Console.WriteLine("\n 고블린을 잡아라 (등급 : D급)\n\n");
+                        Console.WriteLine(" - 고블린 ( " + goblinCount + " / " + totalGoblinCount + " )\n\n");
                         Console.WriteLine(" - 보상 - \n");
                         Console.WriteLine(" Gold : " + KillWolf.QuestGold + ", Exp : " + KillWolf.QuestExp);
                         Console.WriteLine(" " + oldSword.ItemName + " / 공격력 : " + oldSword.ItemAtk + " , 판매가격 : " + oldSword.ItemPrice + "\n");

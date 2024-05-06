@@ -29,7 +29,7 @@ namespace Text_RPG
             Console.WriteLine("0. 뒤로가기");
             Console.WriteLine("");
 
-            switch (ConsoleUtility.PromptChoice())
+            switch (ConsoleUtility.MenuChoice(0,0))
             {
                 case 0:
                     new Main().MainMenu(player, gameManager);

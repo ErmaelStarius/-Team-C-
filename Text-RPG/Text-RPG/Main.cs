@@ -12,6 +12,7 @@ namespace Text_RPG
         Images images = new Images();
         Dialogue dialogue = new Dialogue();
         Battle battle = new Battle();
+        Status status = new Status();
 
         public void MainMenu(Player player, QuestGameManager gameManager)
         {
@@ -34,11 +35,12 @@ namespace Text_RPG
                 else if (mainmenu.Key == ConsoleKey.C)
                 {
                     Console.Clear();
-                    battle.BattlePhase(player);
+                    battle.BattlePhase(player, gameManager);
                 }
                 else if (mainmenu.Key == ConsoleKey.D1 || mainmenu.Key == ConsoleKey.NumPad1)
                 {
-                    
+                    Console.Clear();
+                    status.StatusMenu(player, gameManager);
                 }
                 else if (mainmenu.Key == ConsoleKey.D2 || mainmenu.Key == ConsoleKey.NumPad2)
                 {
