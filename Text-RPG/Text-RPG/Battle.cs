@@ -7,6 +7,8 @@ namespace Text_RPG
     internal class Battle
     {
 
+        Images images = new Images();
+        Player player = new Player();
 
 
         //현재 플레이어와 적의 수치는 임시로 되어있으므로 향후 수정할 계획
@@ -16,6 +18,7 @@ namespace Text_RPG
         float playerDeffense;    //임시 플레이어 방어력
         float playerExp;
         float playerGold;
+        string Log;
         string enemyname;
         float enemyHp;            //임시 몬스터 Hp
         float enemyAttack;        //임시 몬스터 공격력
@@ -39,7 +42,6 @@ namespace Text_RPG
 
             MonsterAppearRandom();
             while (playerAttack > 0 && enemyHp > 0)
-
             {
 
                 MyTurn();  //내턴
@@ -245,62 +247,70 @@ namespace Text_RPG
         }
         public void MonsterAppearRandom()
         {
+
+
             int MonsterRandom = random.Next(0, 6);
             switch (MonsterRandom)
             {
                 case 0:
-                    Console.WriteLine("늑대가 나타났다!");
-                    enemyname = "늑대";
+                    Log = "늑대가 나타났다!";
+                    enemyname = "달빛늑대";
                     enemyHp = 50;
                     enemyAttack = 10;
                     enemyDeffense = 0;
                     enemyExp = 100;
                     enemyGold = 200;
-                break;
+                    images.BattlePage_Wolf(player, Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
+                    break;
                 case 1:
-                    Console.WriteLine("고블린이 나타났다!");
-                    enemyname = "고블린";
+                    Log = "고블린이 나타났다!";
+                    enemyname = "홉고블린";
                     enemyHp = 100;
                     enemyAttack = 20;
                     enemyDeffense = 2;
                     enemyExp = 200;
                     enemyGold =  300;
+                    images.BattlePage_Goblin(player, Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
                     break;
                 case 2:
-                    Console.WriteLine("유령이 나타났다!");
-                    enemyname = "유령";
+                    Log = "저승사자가 나타났다!";
+                    enemyname = "저승사자";
                     enemyHp = 80;
                     enemyAttack = 20;
                     enemyDeffense = 10;
                     enemyExp = 200;
                     enemyGold = 500;
+                    images.BattlePage_Ghost(player, Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
                     break;
                 case 3:
-                    Console.WriteLine("사무라이가 나타났다!");
+                    Log = "사무라이가 나타났다!";
                     enemyname = "사무라이";
                     enemyHp = 200;
                     enemyAttack = 30;
                     enemyDeffense = 5;
                     enemyExp = 1000;
                     enemyGold = 500;
+                    images.BattlePage_Samurai(player, Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
                     break;
                 case 4:
-                    Console.WriteLine("오크전사가 나타났다!");
+                    Log = "오크전사가 나타났다!";
                     enemyname = "오크전사";
                     enemyHp = 150;
                     enemyAttack = 20;
                     enemyDeffense = 10;
                     enemyExp = 800;
                     enemyGold = 600;
+                    images.BattlePage_Orc(player, Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
                     break;
                 case 5:
-                    Console.WriteLine("다크드래곤이 나타났다!");
+                    Log = "다크드래곤이 나타났다!";
                     enemyname = "다크드래곤";
                     enemyHp = 999;
                     enemyAttack = 35;
                     enemyDeffense = 15;
                     enemyExp = 9999;
                     enemyGold = 9999;
+                    images.BattlePage_dragon(player, Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
                     break;
             }
         }

@@ -8,6 +8,10 @@ namespace Text_RPG
         static private Player player;
         public static void Main(string[] args)
         {
+            //Player player = new Player();
+            //Battle battle = new Battle();
+            //battle.BattlePhase(player);
+
             GameManager gameManager = new GameManager();
             gameManager.StartGame();
         }
