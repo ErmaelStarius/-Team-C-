@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\msi\\downloads\\unity\\rtanrain\\-team-c-\\text-rpg\\text-rpg\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,13 +70,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Player.cs",
               "RelativeDocumentMoniker": "Text-RPG\\Player.cs",
               "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Player.cs",
               "RelativeToolTip": "Text-RPG\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAUAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBkAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T08:17:14.866Z",
               "EditorCaption": ""
@@ -89,7 +89,7 @@
               "RelativeDocumentMoniker": "Text-RPG\\Status.cs",
               "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Status.cs",
               "RelativeToolTip": "Text-RPG\\Status.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBsAAAAAAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T08:13:25.445Z",
               "EditorCaption": ""
@@ -104,8 +104,7 @@
               "RelativeToolTip": "Text-RPG\\CreateCharacter.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T02:42:24.167Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-02T02:42:24.167Z"
             },
             {
               "$type": "Document",
@@ -169,13 +168,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Program.cs",
               "RelativeDocumentMoniker": "Text-RPG\\Program.cs",
               "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Program.cs",
               "RelativeToolTip": "Text-RPG\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAArAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAswA4AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T04:10:08.912Z",
               "EditorCaption": ""
@@ -188,7 +187,7 @@
               "RelativeDocumentMoniker": "Text-RPG\\Battle.cs",
               "ToolTip": "C:\\Users\\MSI\\Downloads\\Unity\\RtanRain\\-Team-C-\\Text-RPG\\Text-RPG\\Battle.cs",
               "RelativeToolTip": "Text-RPG\\Battle.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAAwCUAAAArAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAACgAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-01T01:42:08.309Z",
               "EditorCaption": ""
@@ -215,8 +214,7 @@
               "RelativeToolTip": "Text-RPG\\Main.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAADwvxgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T04:10:08.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T04:10:08.907Z"
             },
             {
               "$type": "Document",
@@ -228,8 +226,7 @@
               "RelativeToolTip": "Text-RPG\\Intro.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T04:10:08.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T04:10:08.91Z"
             },
             {
               "$type": "Document",
@@ -241,8 +238,7 @@
               "RelativeToolTip": "Text-RPG\\MainQuest.cs",
               "ViewState": "AQIAADQAAAAAAAAAAAAAwHQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T03:40:37.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T03:40:37.674Z"
             }
           ]
         }

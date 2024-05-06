@@ -8,14 +8,18 @@ namespace Text_RPG
             
             public static void Main(string[] args)
             {
+
+            //StartGame();
                
-               //StartGame();
+                Battle battle = new Battle();
+                battle.BattlePhase();
 
             }
 
-            private static void StartGame()
-            {
+            //private static void StartGame()
+            //{
                 //new Intro().IntroScene();
-            }
+                
+            //}
         }
 }
