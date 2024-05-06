@@ -10,9 +10,6 @@ namespace Text_RPG
 
 
         //현재 플레이어와 적의 수치는 임시로 되어있으므로 향후 수정할 계획
-
-
-        Main main = new Main();
         string playername;
         float playerHp;//임시 플레이어 Hp
         float playerAttack;        
@@ -139,9 +136,10 @@ namespace Text_RPG
             {
                 Main main = new Main();
                 Player player = new Player();
+                QuestGameManager questGameManager = new QuestGameManager();
                 Console.Clear();
                 Console.WriteLine("당신은 도망쳤다!");   //도망치기_패널티로 돈이 떨어짐
-                main.MainMenu(player);
+                main.MainMenu(player,questGameManager);
             }
             else
             {
