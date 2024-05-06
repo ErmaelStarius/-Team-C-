@@ -17,6 +17,8 @@ namespace Text_RPG
         float playerHp;//임시 플레이어 Hp
         float playerAttack;        
         float playerDeffense;    //임시 플레이어 방어력
+        float playerExp;
+        float playerGold;
         string enemyname;
         float enemyHp;            //임시 몬스터 Hp
         float enemyAttack;        //임시 몬스터 공격력
@@ -24,18 +26,19 @@ namespace Text_RPG
         float enemyExp;
         float enemyGold;
         Random random = new Random();   //난수
-        float playerMp = 50;
+        float playerMp;
         float[] RandomDamage = { 0.9f, 1.0f, 1.1f};  //플레이어의 데미지에서 90%, 100% 110% 중 하나가 적용
 
         
         public void BattlePhase(Player player)   //전투과정
         {
-            string playername = player.Name;
-            float playerHp = player.Hp;
-            float playerDeffense = player.Def;
-            float playerMp = player.Mp;
-            float playerExp = player.Exp;
-            float playerGold = player.Gold;
+            playername = player.Name;
+            playerHp = player.Hp;
+            playerAttack = player.Atk;
+            playerDeffense = player.Def;
+            playerMp = player.Mp;
+            playerExp = player.Exp;
+            playerGold = player.Gold;
 
             MonsterAppearRandom();
             while (playerAttack > 0 && enemyHp > 0)
@@ -262,7 +265,7 @@ namespace Text_RPG
                     enemyAttack = 20;
                     enemyDeffense = 2;
                     enemyExp = 200;
-                    enemyGold = 300;
+                    enemyGold =  300;
                     break;
                 case 2:
                     Console.WriteLine("유령이 나타났다!");
