@@ -11,7 +11,7 @@ namespace Text_RPG
 {
     public class QuestManager
     {
-
+        Main main = new Main();
         //퀘스트 목록
         QuestDifficultyReward KillWolf = new QuestDifficultyReward(10, 50); // 난이도 별 보상 (변수의 끝 영어가 난이도)
         QuestDifficultyReward KillGoblin = new QuestDifficultyReward(100, 500);
@@ -42,19 +42,21 @@ namespace Text_RPG
         bool isGoblinQuest = false;
 
 
-        int wolfCount = 3;
+        int wolfCount = 0;
         int totalWolfCount = 3;
-        int goblinCount = 5;
+        int goblinCount = 0;
         int totalGoblinCount = 5;
 
-        public void QuestMenu()
+        public void KillWolfCount()
+        {
+            wolfCount++;
+        }
+
+        public void QuestMenu(Player player, QuestGameManager gameManager)
         {
             Console.Clear(); //화면정리 ( \n 한 줄 띄우기 )
-
             Console.WriteLine("\n ※ 퀘스트 목록 ※\n\n\n");
             Console.WriteLine(" ─────────────────────\n");
-
-
             Console.Write(" 1 - 늑대 퇴치 (D급)");
             Console.ForegroundColor = ConsoleColor.Magenta;
             if (isWolfAccept == false)
@@ -91,13 +93,13 @@ namespace Text_RPG
 
             switch (choiceQuest)
             {
-                case 0: QuestMenu(); break;
-                case 1: QuestKillWolf(); break;
-                case 2: QuestKillGoblin(); break;
+                case 0: gameManager.main.MainMenu(player, gameManager); break;
+                case 1: QuestKillWolf(player, gameManager); break;
+                case 2: QuestKillGoblin(player, gameManager); break;
             }
         }
 
-        public void QuestKillWolf()
+        public void QuestKillWolf(Player player, QuestGameManager gameManager)
         {
 
             // (wolf.MonsterHp < 1)
@@ -122,7 +124,7 @@ namespace Text_RPG
 
             switch (QuestInformation.MenuChoice(0, 2))
             {
-                case 0: QuestMenu(); break;
+                case 0: QuestMenu(player, gameManager); break;
                 case 1:
                     {
                         isWolfAccept = false;
@@ -139,7 +141,7 @@ namespace Text_RPG
 
                         switch (QuestInformation.MenuChoice(0, 0))
                         {
-                            case 0: QuestMenu(); break;
+                            case 0: QuestMenu(player, gameManager); break;
                         }
                     }
                     break;
@@ -159,14 +161,14 @@ namespace Text_RPG
 
                         switch (QuestInformation.MenuChoice(0, 0))
                         {
-                            case 0: QuestMenu(); break;
+                            case 0: QuestMenu(player, gameManager); break;
                         }
                     }
                     break;
             }
         }
 
-        public void QuestKillGoblin()
+        public void QuestKillGoblin(Player player, QuestGameManager gameManager)
         {
 
 
@@ -190,7 +192,7 @@ namespace Text_RPG
 
             switch (QuestInformation.MenuChoice(0, 2))
             {
-                case 0: QuestMenu(); break;
+                case 0: QuestMenu(player, gameManager); break;
                 case 1:
                     {
                         isGoblinAccept = false;
@@ -207,7 +209,7 @@ namespace Text_RPG
 
                         switch (QuestInformation.MenuChoice(0, 0))
                         {
-                            case 0: QuestMenu(); break;
+                            case 0: QuestMenu(player, gameManager); break;
                         }
                     }
                     break;
@@ -228,7 +230,7 @@ namespace Text_RPG
 
                         switch (QuestInformation.MenuChoice(0, 0))
                         {
-                            case 0: QuestMenu(); break;
+                            case 0: QuestMenu(player, gameManager); break;
                         }
                         break;
                     }

@@ -77,7 +77,8 @@ namespace Text_RPG
                         {
                             player.SetStatus(playerName, "전사", 1, 0, 25, 25, 200, 100, 1500);
                             Console.Clear();
-                            new Main().MainMenu(player);
+                            QuestGameManager gameManager = new QuestGameManager();
+                            gameManager.main.MainMenu(player, gameManager);
                             break;
                         }
                         else if (warriorSelect.Key == ConsoleKey.X)
@@ -104,7 +105,8 @@ namespace Text_RPG
                         {
                             player.SetStatus(playerName, "궁수", 1, 0, 35, 15, 150, 150, 1500);
                             Console.Clear();
-                            new Main().MainMenu(player);
+                            QuestGameManager gameManager = new QuestGameManager();
+                            gameManager.main.MainMenu(player, gameManager);
                             break;
                         }
                         else if (archerSelect.Key == ConsoleKey.X)
@@ -131,7 +133,8 @@ namespace Text_RPG
                         {
                             player.SetStatus(playerName, "마법사", 1, 0, 5, 5, 100, 500, 1500);
                             Console.Clear();
-                            new Main().MainMenu(player);
+                            QuestGameManager gameManager = new QuestGameManager();
+                            gameManager.main.MainMenu(player, gameManager);
                             break;
                         }
                         else if (wizardSelect.Key == ConsoleKey.X)
@@ -158,7 +161,8 @@ namespace Text_RPG
                         {
                             player.SetStatus(playerName, "사제", 1, 0, 10, 10, 100, 100, 1500);
                             Console.Clear();
-                            new Main().MainMenu(player);
+                            QuestGameManager gameManager = new QuestGameManager();
+                            gameManager.main.MainMenu(player, gameManager);
                             break;
                         }
                         else if (priestsSelect.Key == ConsoleKey.X)

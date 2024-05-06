@@ -7,14 +7,13 @@ using System.Threading.Tasks;
 
 namespace Text_RPG
 {
-    internal class Main
+    public class Main
     {
         Images images = new Images();
-        QuestManager questManager = new QuestManager();
         Dialogue dialogue = new Dialogue();
         Battle battle = new Battle();
 
-        public void MainMenu(Player player)
+        public void MainMenu(Player player, QuestGameManager gameManager)
         {
             Console.Clear();
             Dialogue_Menu menu = new Dialogue_Menu();
@@ -57,7 +56,7 @@ namespace Text_RPG
                 {
                     // 퀘스트(목록/내용)
                     Console.Clear();
-                    questManager.QuestMenu();
+                    gameManager.questManager.QuestMenu(player, gameManager);
                 }
                 else
                 {

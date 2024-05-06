@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Text_RPG
 {
-    internal class Images
+    public class Images
     {
         public void Intro()
         {
