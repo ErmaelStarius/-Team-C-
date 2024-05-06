@@ -3,24 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\createcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\createcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\images.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\images.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\intro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\intro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\consoleutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\consoleutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\createcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\createcharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\dialogue_systemtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\dialogue_systemtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\dialogue_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,22 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\dialogue_playertext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\dialogue_playertext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\dialogue_systemtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\dialogue_systemtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|c:\\users\\ermaelstarius\\desktop\\#project\\[team] c#\\text-rpg\\-team-c-\\text-rpg\\text-rpg\\mainquest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D4112F9-6C45-4021-98CC-D86187F4665A}|Text-RPG\\Text-RPG.csproj|solutionrelative:text-rpg\\mainquest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,8 +74,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Images.cs",
+              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Images.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\Images.cs",
+              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Images.cs",
+              "RelativeToolTip": "Text-RPG\\Images.cs",
+              "ViewState": "AQIAAP4CAAAAAAAAAAAcwBUDAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T04:46:24.038Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -68,37 +97,130 @@
               "RelativeDocumentMoniker": "Text-RPG\\CreateCharacter.cs",
               "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\CreateCharacter.cs",
               "RelativeToolTip": "Text-RPG\\CreateCharacter.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAqwFcAAAA5AAAA",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAIwKMAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T02:42:24.167Z"
+              "WhenOpened": "2024-05-02T02:42:24.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Battle.cs",
+              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Battle.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\Battle.cs",
+              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Battle.cs",
+              "RelativeToolTip": "Text-RPG\\Battle.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAADwvxAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T01:42:08.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Main.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\Main.cs",
+              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Main.cs",
+              "RelativeToolTip": "Text-RPG\\Main.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T04:10:08.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConsoleUtility.cs",
+              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\ConsoleUtility.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\ConsoleUtility.cs",
+              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\ConsoleUtility.cs",
+              "RelativeToolTip": "Text-RPG\\ConsoleUtility.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAADwvysAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T11:51:04.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dialogue.cs",
+              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\Dialogue.cs",
+              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue.cs",
+              "RelativeToolTip": "Text-RPG\\Dialogue.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T04:10:08.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\GameManager.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\GameManager.cs",
+              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\GameManager.cs",
+              "RelativeToolTip": "Text-RPG\\GameManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T03:41:47.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Program.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\Program.cs",
+              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Program.cs",
+              "RelativeToolTip": "Text-RPG\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T04:10:08.912Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Dialogue_PrisonerText.cs",
-              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_PrisonerText.cs",
-              "RelativeDocumentMoniker": "Text-RPG\\Dialogue_PrisonerText.cs",
-              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_PrisonerText.cs",
-              "RelativeToolTip": "Text-RPG\\Dialogue_PrisonerText.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAwCAAAAAJAAAA",
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Player.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\Player.cs",
+              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Player.cs",
+              "RelativeToolTip": "Text-RPG\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T09:12:19.062Z"
+              "WhenOpened": "2024-05-05T07:37:37.647Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Dialogue_PlayerText.cs",
-              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_PlayerText.cs",
-              "RelativeDocumentMoniker": "Text-RPG\\Dialogue_PlayerText.cs",
-              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_PlayerText.cs",
-              "RelativeToolTip": "Text-RPG\\Dialogue_PlayerText.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAqAAAA",
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Inventory.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\Inventory.cs",
+              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Inventory.cs",
+              "RelativeToolTip": "Text-RPG\\Inventory.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAADwvwwAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T09:11:03.486Z"
+              "WhenOpened": "2024-05-06T05:43:32.82Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Status.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\Status.cs",
+              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Status.cs",
+              "RelativeToolTip": "Text-RPG\\Status.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T12:10:41.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Dialogue_SystemText.cs",
               "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_SystemText.cs",
               "RelativeDocumentMoniker": "Text-RPG\\Dialogue_SystemText.cs",
@@ -110,7 +232,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
+              "Title": "QuestManager.cs",
+              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\QuestManager.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\QuestManager.cs",
+              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\QuestManager.cs",
+              "RelativeToolTip": "Text-RPG\\QuestManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T03:40:37.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Dialogue_Menu.cs",
               "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_Menu.cs",
               "RelativeDocumentMoniker": "Text-RPG\\Dialogue_Menu.cs",
@@ -122,90 +256,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Images.cs",
-              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Images.cs",
-              "RelativeDocumentMoniker": "Text-RPG\\Images.cs",
-              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Images.cs",
-              "RelativeToolTip": "Text-RPG\\Images.cs",
-              "ViewState": "AQIAAIQDAAAAAAAAAAAcwKgDAACNAAAA",
+              "DocumentIndex": 14,
+              "Title": "Dialogue_PrisonerText.cs",
+              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_PrisonerText.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\Dialogue_PrisonerText.cs",
+              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_PrisonerText.cs",
+              "RelativeToolTip": "Text-RPG\\Dialogue_PrisonerText.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAwCAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T04:46:24.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T09:12:19.062Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Program.cs",
-              "RelativeDocumentMoniker": "Text-RPG\\Program.cs",
-              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Program.cs",
-              "RelativeToolTip": "Text-RPG\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "DocumentIndex": 15,
+              "Title": "Dialogue_PlayerText.cs",
+              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_PlayerText.cs",
+              "RelativeDocumentMoniker": "Text-RPG\\Dialogue_PlayerText.cs",
+              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue_PlayerText.cs",
+              "RelativeToolTip": "Text-RPG\\Dialogue_PlayerText.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T04:10:08.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Battle.cs",
-              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Battle.cs",
-              "RelativeDocumentMoniker": "Text-RPG\\Battle.cs",
-              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Battle.cs",
-              "RelativeToolTip": "Text-RPG\\Battle.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T01:42:08.309Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Dialogue.cs",
-              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue.cs",
-              "RelativeDocumentMoniker": "Text-RPG\\Dialogue.cs",
-              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Dialogue.cs",
-              "RelativeToolTip": "Text-RPG\\Dialogue.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwB8AAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T04:10:08.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Main.cs",
-              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Main.cs",
-              "RelativeDocumentMoniker": "Text-RPG\\Main.cs",
-              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Main.cs",
-              "RelativeToolTip": "Text-RPG\\Main.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAADwvxgAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T04:10:08.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Intro.cs",
-              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Intro.cs",
-              "RelativeDocumentMoniker": "Text-RPG\\Intro.cs",
-              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Intro.cs",
-              "RelativeToolTip": "Text-RPG\\Intro.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T04:10:08.91Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainQuest.cs",
-              "DocumentMoniker": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\MainQuest.cs",
-              "RelativeDocumentMoniker": "Text-RPG\\MainQuest.cs",
-              "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\MainQuest.cs",
-              "RelativeToolTip": "Text-RPG\\MainQuest.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAAwHQAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T03:40:37.674Z"
+              "WhenOpened": "2024-05-01T09:11:03.486Z"
             }
           ]
         }

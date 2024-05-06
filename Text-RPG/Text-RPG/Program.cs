@@ -3,20 +3,13 @@ using System.Threading.Tasks.Dataflow;
 
 namespace Text_RPG
 {
-        internal class Program
+    internal class Program
+    {
+        static private Player player;
+        public static void Main(string[] args)
         {
-            
-            public static void Main(string[] args)
-            {
-               
-               StartGame();
-
-            }
-
-            private static void StartGame()
-            {
-                new Intro().IntroScene();
-                
-            }
+            GameManager gameManager = new GameManager();
+            gameManager.StartGame();
         }
+    }
 }

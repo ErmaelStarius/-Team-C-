@@ -2,19 +2,30 @@
 {
     internal class ConsoleUtility
     {
+        
 
-        public static int PromptChoice(int min, int max)
+
+        public static ConsoleKey PromptChoice()
         {
+
+            Images images = new Images();
+
             while (true)
             {
-                //Console.WriteLine("원하시는 번호를 입력해주세요");
-                //Console.Write(">>");
-                if (int.TryParse(Console.ReadLine(), out int choice) && choice >= min && choice <= max)
+                ConsoleKeyInfo InputKey = Console.ReadKey();
+
+                if (InputKey.Key == ConsoleKey.Z)
                 {
-                    return choice;
+                    return ConsoleKey.Z;
                 }
-                Console.WriteLine("잘못된 입력입니다. 다시 시도해주세요.");
-                Console.Write(">> ");
+                else if(InputKey.Key == ConsoleKey.X)
+                {
+                    return ConsoleKey.X;
+                }
+
+                // 에러
+                Console.Clear();
+                images.Error();
             }
         }
 

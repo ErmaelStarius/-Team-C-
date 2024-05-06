@@ -29,10 +29,13 @@ namespace Text_RPG
             Console.WriteLine("0. 뒤로가기");
             Console.WriteLine("");
 
-            switch (ConsoleUtility.PromptChoice(0, 0))
+            switch (ConsoleUtility.PromptChoice())
             {
                 case 0:
                     new Main().MainMenu(player, gameManager);
+                    break;
+                default:
+                    // 에러 메시지
                     break;
             }
         }

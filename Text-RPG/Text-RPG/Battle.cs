@@ -1,22 +1,24 @@
 ﻿using System;
+using System.Numerics;
 using System.Xml.Serialization;
 
 namespace Text_RPG
 {
     internal class Battle
     {
-        Images images = new Images();
-        QuestManager questManager = new QuestManager();
-        QuestInformation questInformation = new QuestInformation();
-
         
+
+
         //현재 플레이어와 적의 수치는 임시로 되어있으므로 향후 수정할 계획
 
         
-        string playername = "플레이어";
-        float playerHp = 100f;           //임시 플레이어 Hp
-        float playerAttack = 10f;       //임시 플레이어 공격력
-        float playerDeffense = 3f;      //임시 플레이어 방어력
+      
+        string playername;
+        float playerHp;//임시 플레이어 Hp
+        float playerAttack;        
+        float playerDeffense;    //임시 플레이어 방어력
+        float playerExp;
+        float playerGold;
         string enemyname;
         float enemyHp;            //임시 몬스터 Hp
         float enemyAttack;        //임시 몬스터 공격력
@@ -24,28 +26,27 @@ namespace Text_RPG
         float enemyExp;
         float enemyGold;
         Random random = new Random();   //난수
-        float playerMp = 50;
+        float playerMp;
         float[] RandomDamage = { 0.9f, 1.0f, 1.1f};  //플레이어의 데미지에서 90%, 100% 110% 중 하나가 적용
 
         
-        public void BattlePhase()   //전투과정
+        public void BattlePhase(Player player)   //전투과정
         {
-            BattleLog();
-        }
+            playername = player.Name;
+            playerHp = player.Hp;
+            playerAttack = player.Atk;
+            playerDeffense = player.Def;
+            playerMp = player.Mp;
+            playerExp = player.Exp;
+            playerGold = player.Gold;
 
-        private void BattleLog()
-        {
             MonsterAppearRandom();
-            while (playerHp > 0 && enemyHp > 0)
+            while (playerAttack > 0 && enemyHp > 0)
 
             {
-                if (playerHp > 100f)
-                {
-                    playerHp = 100f;
 
-                }
                 MyTurn();  //내턴
-                if(enemyHp <= 0)
+                if (enemyHp <= 0)
                 {
                     Battle_Reward();
                     break;
@@ -54,6 +55,13 @@ namespace Text_RPG
                 EnemyTurn();  //적의턴 그러고 적이 죽으면 다시 플레이어턴으로 돌아간다.
 
             }
+        }
+
+        private void BattleLog()
+        {
+            
+
+            
         }
 
         private void ContinueTurn()
@@ -72,11 +80,11 @@ namespace Text_RPG
             if (enemyHp > 0)      //적의 턴
             {
 
-                playerHp -= (enemyAttack - playerDeffense);                               //적의 데미지는 공격력 - 방어력
+                playerAttack -= (enemyAttack - playerDeffense);                               //적의 데미지는 공격력 - 방어력
                 Console.WriteLine($"적은 당신에게 {EnemyDamage.ToString("N1")} 만큼의 데미지를 입혔습니다.");
                 
             }
-            else 
+            else
             {
                 Battle_Reward();
             }
@@ -90,9 +98,9 @@ namespace Text_RPG
 
         private void Battle_Reward() //보상
         {
-            if (enemyname == "늑대")
+            if(enemyname == "늑대")
             {
-                questManager.KillWolfCount();
+                //questManager.KillWolfCount();
             }
             Console.Clear();
             Console.WriteLine("");
@@ -116,7 +124,7 @@ namespace Text_RPG
                 Console.WriteLine();
                 Console.Clear();
                 enemyHp -= (PlayerDamage - enemyDeffense);                                                        //현재 플레이어의 데미지는 공격력 - 적의 방어력
-                Console.WriteLine($"당신은 적에게 {MyAttack.ToString("N1")} 만큼의 데미지를 입혔습니다.");   //향후 "적" 에 몬스터 이름이 들어갈 계획
+                Console.WriteLine($"{playername}은 적에게 {MyAttack.ToString("N1")} 만큼의 데미지를 입혔습니다.");   //향후 "적" 에 몬스터 이름이 들어갈 계획
                 
             }
             else if (choice == "2")
@@ -209,7 +217,7 @@ namespace Text_RPG
                 {
                     Console.Clear();
                     Console.WriteLine("당신은 마나가 부족하여 스킬을 쓸 수 없습니다.");
-                    BattlePhase();
+                    MyTurn();
                 }
             }
             else if (choiceskill == "2")
@@ -226,7 +234,7 @@ namespace Text_RPG
                 {
                     Console.Clear();
                     Console.WriteLine("당신은 마나가 부족하여 스킬을 쓸 수 없습니다.");
-                    BattlePhase();
+                    MyTurn();
                 }
             }
             else
@@ -257,7 +265,7 @@ namespace Text_RPG
                     enemyAttack = 20;
                     enemyDeffense = 2;
                     enemyExp = 200;
-                    enemyGold = 300;
+                    enemyGold =  300;
                     break;
                 case 2:
                     Console.WriteLine("유령이 나타났다!");
