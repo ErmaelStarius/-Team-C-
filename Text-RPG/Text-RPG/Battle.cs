@@ -6,13 +6,13 @@ namespace Text_RPG
 {
     internal class Battle
     {
-        
+
 
 
         //현재 플레이어와 적의 수치는 임시로 되어있으므로 향후 수정할 계획
 
-        
-      
+
+        Main main = new Main();
         string playername;
         float playerHp;//임시 플레이어 Hp
         float playerAttack;        
@@ -57,13 +57,6 @@ namespace Text_RPG
             }
         }
 
-        private void BattleLog()
-        {
-            
-
-            
-        }
-
         private void ContinueTurn()
         {           
             BattleStats();
@@ -93,6 +86,8 @@ namespace Text_RPG
                 Console.Clear();
                 Console.WriteLine("");
                 Console.WriteLine("당신은 죽었습니다!");  //사망하고 저장한 시점으로 돌아가거나 
+                Images images = new Images();
+                images.Die();
             }
         }
 
@@ -142,8 +137,11 @@ namespace Text_RPG
             }
             else if (choice == "4")
             {
+                Main main = new Main();
+                Player player = new Player();
                 Console.Clear();
                 Console.WriteLine("당신은 도망쳤다!");   //도망치기_패널티로 돈이 떨어짐
+                main.MainMenu(player);
             }
             else
             {
