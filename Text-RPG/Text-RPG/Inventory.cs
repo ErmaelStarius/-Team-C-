@@ -10,7 +10,7 @@ namespace Text_RPG
     internal class Inventory // 포션, 장비, 골드 정도 들어가면될듯
     {
         //플레이어 정보
-        Player player = new Player("jeunSa", "전사", 1, 0, 0, 100, 20, 0, 1500);
+        Player player = new Player();
 
         private List<ItemInfo> inventory;
 
@@ -18,7 +18,7 @@ namespace Text_RPG
 
         private void InitializeGame()
         {
-            player = new Player("Jiwon", "Programmer", 1, 0, 10, 5, 100, 10, 15000);
+            player.SetStatus("Jiwon", "Programmer", 1, 0, 10, 5, 100, 10, 15000);
 
             inventory = new List<ItemInfo>();
 

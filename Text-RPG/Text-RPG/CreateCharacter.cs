@@ -9,159 +9,173 @@ namespace Text_RPG
     internal class CreateCharacter
     {
         Images images = new Images();
-        Player player;
+
+        Player player = new Player();
         //캐릭터 생성
         public void NewCharacter()
         {
             Console.Clear();
-            //images.CharacterName();
-            Console.WriteLine("**********************************************\n");
-            Console.WriteLine("플레이어명: \n");
-            Console.WriteLine("**********************************************");
-            Console.SetCursorPosition(12,2);
-            string playerName = Console.ReadLine();
+            images.CharacterName(player);
+
+            Console.SetCursorPosition(114,45);
+            player.Name = Console.ReadLine();
 
             
             //플레이어명 기입 검증
-            if (string.IsNullOrEmpty(playerName))
+            if (player.Name == null || player.Name == "")
             {
-                Console.Clear();
-                Console.WriteLine("플레이어명을 입력해주세요");
-                Thread.Sleep(1000);
+                images.Error();
                 NewCharacter();
                 
             }
-            else 
+            else if(player.Name != null)
             {
-                Console.Clear();
-                Console.WriteLine("**********************************************\n");
-                Console.WriteLine($"   플레이어명: {playerName}으로 하시겠습니까?\n");
-                Console.WriteLine("               1.예 2.아니오                  \n");
-                Console.WriteLine("**********************************************");
-                Console.Write(">> ");
-                int choice = ConsoleUtility.PromptChoice(1, 2);
-
-                switch (choice)
+                while (true)
                 {
-                    case 1:
-                        Newjob(playerName);
+                    images.CharacterNameConfirm(player);
+
+                    ConsoleKeyInfo choice = Console.ReadKey();
+
+                    if (choice.Key == ConsoleKey.Z)
+                    {
+                        Newjob(player.Name);
                         break;
-                    case 2:
+                    }
+                    else if (choice.Key == ConsoleKey.X)
+                    {
                         NewCharacter();
                         break;
+                    }
+                    else
+                    {
+                        images.Error();
+                    }
                 }
+
             }
         }
 
         //직업 선택
         private void Newjob(string playerName)
         {
-            
-
-            Console.Clear();
-            //images.CharaterSelect
-            Console.WriteLine("**********************************************\n");
-            Console.WriteLine($"      1.전사, 2.궁수, 3.마법사, 4.사제       \n");
-            Console.WriteLine("**********************************************");
-            Console.Write(">> ");
-            int choice = ConsoleUtility.PromptChoice(1, 4);
-
-            switch (choice)
+            while (true)
             {
-                
-                //전사
-                case 1:
-                    //images.CharaterSelect
-                    Console.Clear();
-                    Console.WriteLine("**********************************************\n");
-                    Console.WriteLine("          '전사'로 확정 하시겠습니까?         \n");
-                    Console.WriteLine("               1.예, 2.아니오                 \n");
-                    Console.WriteLine("**********************************************");
-                    Console.Write(">> ");
+                Console.Clear();
+                images.CharacterSelect();
+                ConsoleKeyInfo choice = Console.ReadKey();
 
-                    int warriorSelect = ConsoleUtility.PromptChoice(1, 2);
-                    
-                    if (warriorSelect == 1)
+                if (choice.Key == ConsoleKey.D1 || choice.Key == ConsoleKey.NumPad1)
+                {
+                    while (true)
                     {
-                        player = new Player(playerName, "전사", 1, 0, 25, 25, 200, 100, 1500);
                         Console.Clear();
-                        new Main().MainMenu(player);
-                    }
-                    else
-                    {
-                        Newjob(playerName);
-                    }
+                        images.Accept_01();
 
-                    break;
-                //궁수
-                case 2:
-                    //images.CharaterSelect
-                    Console.Clear();
-                    Console.WriteLine("**********************************************\n");
-                    Console.WriteLine("          '궁수'로 확정 하시겠습니까?         \n");
-                    Console.WriteLine("               1.예, 2.아니오                 \n");
-                    Console.WriteLine("**********************************************");
-                    Console.Write(">> ");
+                        ConsoleKeyInfo warriorSelect = Console.ReadKey(true);
 
-                    int archerSelect = ConsoleUtility.PromptChoice(1, 2);
-                    
-                    if (archerSelect == 1)
+                        if (warriorSelect.Key == ConsoleKey.Z)
+                        {
+                            player.SetStatus(playerName, "전사", 1, 0, 25, 25, 200, 100, 1500);
+                            Console.Clear();
+                            new Main().MainMenu(player);
+                            break;
+                        }
+                        else if (warriorSelect.Key == ConsoleKey.X)
+                        {
+                            Newjob(playerName);
+                            break;
+                        }
+                        else
+                        {
+                            images.Error();
+                        }
+                    }
+                }
+                else if (choice.Key == ConsoleKey.D2 || choice.Key == ConsoleKey.NumPad2)
+                {
+                    while (true)
                     {
-                        player = new Player(playerName, "궁수", 1, 0, 35, 15, 150, 150, 1500);
                         Console.Clear();
-                        new Main().MainMenu(player);
-                    }
-                    else
-                    {
-                        Newjob(playerName);
-                    }
-                    break;
-                //마법사
-                case 3:
-                    //images.CharaterSelect
-                    Console.Clear();
-                    Console.WriteLine("**********************************************\n");
-                    Console.WriteLine("          '마법사'로 확정 하시겠습니까?         \n");
-                    Console.WriteLine("               1.예, 2.아니오                 \n");
-                    Console.WriteLine("**********************************************");
-                    Console.Write(">> ");
+                        images.Accept_02();
 
-                    int wizardSelect = ConsoleUtility.PromptChoice(1, 2);
+                        ConsoleKeyInfo archerSelect = Console.ReadKey(true);
 
-                    if (wizardSelect == 1)
+                        if (archerSelect.Key == ConsoleKey.Z)
+                        {
+                            player.SetStatus(playerName, "궁수", 1, 0, 35, 15, 150, 150, 1500);
+                            Console.Clear();
+                            new Main().MainMenu(player);
+                            break;
+                        }
+                        else if (archerSelect.Key == ConsoleKey.X)
+                        {
+                            Newjob(playerName);
+                            break;
+                        }
+                        else
+                        {
+                            images.Error();
+                        }
+                    }
+                }
+                else if (choice.Key == ConsoleKey.D3 || choice.Key == ConsoleKey.NumPad3)
+                {
+                    while (true)
                     {
-                        player = new Player(playerName, "마법사", 1, 0, 5, 5, 100, 500, 1500);
                         Console.Clear();
-                        new Main().MainMenu(player);
-                    }
-                    else
-                    {
-                        Newjob(playerName);
-                    }
-                    break;
-                //사제
-                case 4:
-                    //images.CharaterSelect
-                    Console.Clear();
-                    Console.WriteLine("**********************************************\n");
-                    Console.WriteLine("          '사제'로 확정 하시겠습니까?         \n");
-                    Console.WriteLine("               1.예, 2.아니오                 \n");
-                    Console.WriteLine("**********************************************");
-                    Console.Write(">> ");
+                        images.Accept_03();
 
-                    int priestsSelect = ConsoleUtility.PromptChoice(1, 2);
+                        ConsoleKeyInfo wizardSelect = Console.ReadKey(true);
 
-                    if (priestsSelect == 1)
+                        if (wizardSelect.Key == ConsoleKey.Z)
+                        {
+                            player.SetStatus(playerName, "마법사", 1, 0, 5, 5, 100, 500, 1500);
+                            Console.Clear();
+                            new Main().MainMenu(player);
+                            break;
+                        }
+                        else if (wizardSelect.Key == ConsoleKey.X)
+                        {
+                            Newjob(playerName);
+                            break;
+                        }
+                        else
+                        {
+                            images.Error();
+                        }
+                    }
+                }
+                else if (choice.Key == ConsoleKey.D4 || choice.Key == ConsoleKey.NumPad4)
+                {
+                    while (true)
                     {
-                        player = new Player(playerName, "사제", 1, 0, 10, 10, 100, 100, 1500);
                         Console.Clear();
-                        new Main().MainMenu(player);
+                        images.Accept_04();
+
+                        ConsoleKeyInfo priestsSelect = Console.ReadKey(true);
+
+                        if (priestsSelect.Key == ConsoleKey.Z)
+                        {
+                            player.SetStatus(playerName, "사제", 1, 0, 10, 10, 100, 100, 1500);
+                            Console.Clear();
+                            new Main().MainMenu(player);
+                            break;
+                        }
+                        else if (priestsSelect.Key == ConsoleKey.X)
+                        {
+                            Newjob(playerName);
+                            break;
+                        }
+                        else
+                        {
+                            images.Error();
+                        }
                     }
-                    else
-                    {
-                        Newjob(playerName);
-                    }
-                break;
+                }
+                else
+                {
+                    images.Error();
+                }
             }
         }
     }      

@@ -8,8 +8,8 @@ namespace Text_RPG
         static private Player player;
         public static void Main(string[] args)
         {
-            Intro intro = new Intro();
-            intro.IntroScene();
+            GameManager gameManager = new GameManager();
+            gameManager.StartGame();
         }
     }
 }
