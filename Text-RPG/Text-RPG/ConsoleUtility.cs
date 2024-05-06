@@ -29,6 +29,20 @@
             }
         }
 
+        public static int MenuChoice(int min, int max)
+        {
+            while (true)
+            {
+                Console.WriteLine("원하시는 번호를 입력해주세요");
+                Console.Write(">>");
+                if (int.TryParse(Console.ReadLine(), out int choice) && choice >= min && choice <= max)
+                {
+                    return choice;
+                }
+                Console.WriteLine("잘못된 입력입니다. 다시 시도해주세요.");
+            }
+        }
+
 
         internal static void ShowTitle(string title)
         {
