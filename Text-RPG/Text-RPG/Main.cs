@@ -34,7 +34,7 @@ namespace Text_RPG
                 else if (mainmenu.Key == ConsoleKey.C)
                 {
                     Console.Clear();
-                    battle.BattlePhase(player);
+                    battle.BattlePhase(player, gameManager);
                 }
                 else if (mainmenu.Key == ConsoleKey.D1 || mainmenu.Key == ConsoleKey.NumPad1)
                 {

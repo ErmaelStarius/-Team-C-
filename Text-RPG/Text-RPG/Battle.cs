@@ -12,7 +12,7 @@ namespace Text_RPG
         //현재 플레이어와 적의 수치는 임시로 되어있으므로 향후 수정할 계획
 
 
-        
+        QuestManager questManager = new QuestManager();
         string playername;
         float playerHp;//임시 플레이어 Hp
         float playerAttack;        
@@ -30,7 +30,7 @@ namespace Text_RPG
         float[] RandomDamage = { 0.9f, 1.0f, 1.1f};  //플레이어의 데미지에서 90%, 100% 110% 중 하나가 적용
 
         
-        public void BattlePhase(Player player)   //전투과정
+        public void BattlePhase(Player player, QuestGameManager gameManager)   //전투과정
         {
             playername = player.Name;
             playerHp = player.Hp;
@@ -45,7 +45,7 @@ namespace Text_RPG
 
             {
 
-                MyTurn();  //내턴
+                MyTurn(player, gameManager);  //내턴
                 if (enemyHp <= 0)
                 {
                     Battle_Reward();
@@ -91,11 +91,16 @@ namespace Text_RPG
             }
         }
 
-        private float Battle_Reward() //보상
+        public float Battle_Reward() //보상
         {
-            if(enemyname == "늑대")
+
+            if(enemyHp < 0)
             {
-                //questManager.KillWolfCount();
+                questManager.KillWolfCount();
+            }
+            if (enemyname == "고블린")
+            {
+                questManager.KillGoblinCount();
             }
             Console.Clear();
             Console.WriteLine("");
@@ -106,7 +111,7 @@ namespace Text_RPG
             return playerExp + playerGold;
         }
 
-        private void MyTurn()  //플레이어의 차례
+        public void MyTurn(Player player, QuestGameManager gameManager)  //플레이어의 차례
         {
             float PlayerDamage = playerAttack * RandomDamage[random.Next(RandomDamage.Length)];
             float MyAttack = PlayerDamage - enemyDeffense;
@@ -127,19 +132,16 @@ namespace Text_RPG
             }
             else if (choice == "2")
             {
-                Battle_Skill();
+                Battle_Skill(player, gameManager);
             }
             else if (choice == "3")
             {
 
-                OpenInventory();           
+                OpenInventory(player, gameManager);           
                 
             }
             else if (choice == "4")
             {
-                QuestGameManager gameManager = new QuestGameManager();
-                Main main = new Main();
-                Player player = new Player();
                 Console.Clear();
                 Console.WriteLine("당신은 도망쳤다!");   //도망치기_패널티로 돈이 떨어짐
                 gameManager.main.MainMenu(player, gameManager);
@@ -148,11 +150,11 @@ namespace Text_RPG
             {
                 Console.Clear();
                 Console.WriteLine("잘못 입력헀습니다. 다시 눌러주십시오");
-                MyTurn();
+                MyTurn(player, gameManager);
             }
         }
 
-        private void OpenInventory() //인벤토리 열기
+        public void OpenInventory(Player player, QuestGameManager gameManager) //인벤토리 열기
         {
             Console.Clear();
             BattleStats();
@@ -165,18 +167,18 @@ namespace Text_RPG
                 Console.Clear();
                 Console.WriteLine("당신은 포션을 사용해 10 만큼 회복했다.!");   //포션 사용
                 playerHp += 10;
-                MyTurn();
+                MyTurn(player, gameManager);
             }
             else if (choiceitem == "2")
             {
                 Console.Clear();
-                MyTurn();
+                MyTurn(player, gameManager);
             }
             else
             {
                 Console.Clear();
                 Console.WriteLine("잘못 입력헀습니다. 다시 눌러주십시오");
-                OpenInventory();
+                OpenInventory(player, gameManager);
             }
         }
         public void BattleStats()
@@ -193,7 +195,7 @@ namespace Text_RPG
             Console.WriteLine("===============================");
             Console.WriteLine("");
         }
-        private void Battle_Skill()    //스킬
+        private void Battle_Skill(Player player, QuestGameManager gameManager)    //스킬
         {
             float PlayerDamage = playerAttack * RandomDamage[random.Next(RandomDamage.Length)];
             float MySkillAttack = PlayerDamage * 2 - enemyDeffense;
@@ -219,7 +221,7 @@ namespace Text_RPG
                 {
                     Console.Clear();
                     Console.WriteLine("당신은 마나가 부족하여 스킬을 쓸 수 없습니다.");
-                    MyTurn();
+                    MyTurn(player, gameManager);
                 }
             }
             else if (choiceskill == "2")
@@ -236,14 +238,14 @@ namespace Text_RPG
                 {
                     Console.Clear();
                     Console.WriteLine("당신은 마나가 부족하여 스킬을 쓸 수 없습니다.");
-                    MyTurn();
+                    MyTurn(player, gameManager);
                 }
             }
             else
             {
                 Console.Clear();
                 Console.WriteLine("잘못 눌렀습니다.");
-                MyTurn();
+                MyTurn(player, gameManager);
             }
         }
         public void MonsterAppearRandom()
