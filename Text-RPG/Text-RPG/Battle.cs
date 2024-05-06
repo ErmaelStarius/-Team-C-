@@ -98,11 +98,11 @@ namespace Text_RPG
         {
             if (enemyHp < 0)
             {
-                if (enemyname == "늑대")
+                if (enemyname == "달빛늑대")
                 {
                     questManager.KillWolfCount();
                 }
-                if (enemyname == "고블린")
+                if (enemyname == "홉고블린")
                 {
                     questManager.KillGoblinCount();
                 }
