@@ -6,10 +6,9 @@ using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using Text_RPG;
 
-//  몬스터 카운트 하기, 완료 후 보상받기 battle 이랑 quest랑 연결
+//  몬스터 카운트 하기, 완료 후 보상받기
 namespace Text_RPG
 {
-    
     public class QuestManager
     {
         Main main = new Main();
@@ -43,7 +42,7 @@ namespace Text_RPG
         bool isGoblinQuest = false;
 
 
-        int wolfCount = 0; //퍼블릭 or 메소드
+        int wolfCount = 0;
         int totalWolfCount = 3;
         int goblinCount = 0;
         int totalGoblinCount = 5;
@@ -52,7 +51,6 @@ namespace Text_RPG
         {
             wolfCount++;
         }
-
 
         public void QuestMenu(Player player, QuestGameManager gameManager)
         {
@@ -76,7 +74,6 @@ namespace Text_RPG
 
             Console.Write(" 2 - 고블린 잡기 (B급)");
             Console.ForegroundColor = ConsoleColor.Magenta;
-            
             if (isGoblinAccept == false)
             {
                 Console.WriteLine(" 진행 중");
@@ -96,7 +93,7 @@ namespace Text_RPG
 
             switch (choiceQuest)
             {
-                case 0: gameManager.main.MainMenu(player, gameManager); break; //메인화면으로 가게하기
+                case 0: gameManager.main.MainMenu(player, gameManager); break;
                 case 1: QuestKillWolf(player, gameManager); break;
                 case 2: QuestKillGoblin(player, gameManager); break;
             }
@@ -237,7 +234,7 @@ namespace Text_RPG
                         }
                         break;
                     }
-                        
+
             }
         }
     }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Text_RPG
 {
     public class QuestGameManager
-    {
+    {   
         public Main main;
         public QuestManager questManager;
 
