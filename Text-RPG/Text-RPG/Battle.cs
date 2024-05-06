@@ -92,11 +92,11 @@ namespace Text_RPG
             {
                 Console.Clear();
                 Console.WriteLine("");
-                Console.WriteLine("당신은 죽었습니다!");  //사망하고 저장한 시점으로 돌아가거나 리셋
+                Console.WriteLine("당신은 죽었습니다!");  //사망하고 저장한 시점으로 돌아가거나 
             }
         }
 
-        private void Battle_Reward() //보상
+        private float Battle_Reward() //보상
         {
             if(enemyname == "늑대")
             {
@@ -106,6 +106,9 @@ namespace Text_RPG
             Console.WriteLine("");
             Console.WriteLine("당신은 적을 쓰러뜨렸습니다!!"); //적을 쓰러뜨림_보상추가 예정
             Console.WriteLine($"당신은 {enemyExp} 만큼의 경험치와 {enemyGold}를 획득했습니다!"); //적을 쓰러뜨림_보상추가 예정
+            playerExp += enemyExp;
+            playerGold += enemyGold;
+            return playerExp + playerGold;
         }
 
         private void MyTurn()  //플레이어의 차례
