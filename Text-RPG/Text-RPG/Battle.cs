@@ -140,6 +140,8 @@ namespace Text_RPG
             float MyAttack = PlayerDamage - enemyDeffense;
             float MySkillAttack = PlayerDamage * 2 - enemyDeffense;
 
+            Console.Clear();
+            Log = "행동을 선택하세요.";
             images.BattlePage(type, playerHp.ToString("N1"), playerMp.ToString("N1"), Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold, images.selectOption("적을 기본 공격한다."), images.selectOption("적을 스킬 공격한다."), images.selectOption("아이템을 사용한다."), images.selectOption("적에게서 도망친다."));
            
             
