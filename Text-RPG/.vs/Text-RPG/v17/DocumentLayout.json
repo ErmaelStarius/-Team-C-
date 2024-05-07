@@ -84,7 +84,7 @@
               "RelativeDocumentMoniker": "Text-RPG\\Images.cs",
               "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Images.cs",
               "RelativeToolTip": "Text-RPG\\Images.cs",
-              "ViewState": "AQIAAJQEAAAAAAAAAAAcwKMEAACsAAAA",
+              "ViewState": "AQIAAA8EAAAAAAAAAAAQwCMEAACAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T04:46:24.038Z",
               "EditorCaption": ""
@@ -97,7 +97,7 @@
               "RelativeDocumentMoniker": "Text-RPG\\Battle.cs",
               "ToolTip": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Battle.cs",
               "RelativeToolTip": "Text-RPG\\Battle.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAFAAAAAgAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAADgv0IAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-01T01:42:08.309Z",
               "EditorCaption": ""
@@ -112,8 +112,7 @@
               "RelativeToolTip": "Text-RPG\\Main.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAAwCQAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T04:10:08.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T04:10:08.907Z"
             },
             {
               "$type": "Document",
@@ -125,8 +124,7 @@
               "RelativeToolTip": "Text-RPG\\ConsoleUtility.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAADwvysAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T11:51:04.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T11:51:04.797Z"
             },
             {
               "$type": "Document",
@@ -138,8 +136,7 @@
               "RelativeToolTip": "Text-RPG\\Dialogue.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T04:10:08.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T04:10:08.903Z"
             },
             {
               "$type": "Document",
@@ -151,8 +148,7 @@
               "RelativeToolTip": "Text-RPG\\GameManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T03:41:47.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T03:41:47.962Z"
             },
             {
               "$type": "Document",
@@ -164,8 +160,7 @@
               "RelativeToolTip": "Text-RPG\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T04:10:08.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T04:10:08.912Z"
             },
             {
               "$type": "Document",
@@ -177,8 +172,7 @@
               "RelativeToolTip": "Text-RPG\\Player.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T07:37:37.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T07:37:37.647Z"
             },
             {
               "$type": "Document",
@@ -202,8 +196,7 @@
               "RelativeToolTip": "Text-RPG\\Dialogue_Menu.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:51:39.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T07:51:39.591Z"
             },
             {
               "$type": "Document",
@@ -215,8 +208,7 @@
               "RelativeToolTip": "Text-RPG\\CreateCharacter.cs",
               "ViewState": "AQIAACQAAAAAAAAAAAAUwFAAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T02:42:24.167Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-02T02:42:24.167Z"
             },
             {
               "$type": "Document",
@@ -252,8 +244,7 @@
               "RelativeToolTip": "Text-RPG\\QuestManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAmwC8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T03:40:37.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T03:40:37.674Z"
             },
             {
               "$type": "Document",

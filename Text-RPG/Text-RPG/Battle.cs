@@ -44,10 +44,11 @@ namespace Text_RPG
             playerExp = player.Exp;
             playerGold = player.Gold;
 
-            MonsterAppearRandom();
+            
             while (playerAttack > 0 && enemyHp > 0)
             {
-
+                MonsterAppearRandom();
+                //
                 MyTurn(player, gameManager);  //내턴
                 if (enemyHp <= 0)
                 {
@@ -270,7 +271,7 @@ namespace Text_RPG
                     enemyDeffense = 0;
                     enemyExp = 100;
                     enemyGold = 200;
-                    images.BattlePage_Wolf(player, Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
+                    images.BattlePage_Wolf(playerHp.ToString("N1"), playerMp.ToString("N1"), Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
                     break;
                 case 1:
                     Log = "고블린이 나타났다!";
@@ -280,7 +281,7 @@ namespace Text_RPG
                     enemyDeffense = 2;
                     enemyExp = 200;
                     enemyGold =  300;
-                    images.BattlePage_Goblin(player, Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
+                    images.BattlePage_Goblin(playerHp.ToString("N1"), playerMp.ToString("N1"), Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
                     break;
                 case 2:
                     Log = "저승사자가 나타났다!";
@@ -290,7 +291,7 @@ namespace Text_RPG
                     enemyDeffense = 10;
                     enemyExp = 200;
                     enemyGold = 500;
-                    images.BattlePage_Ghost(player, Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
+                    images.BattlePage_Ghost(playerHp.ToString("N1"), playerMp.ToString("N1"), Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
                     break;
                 case 3:
                     Log = "사무라이가 나타났다!";
@@ -300,7 +301,7 @@ namespace Text_RPG
                     enemyDeffense = 5;
                     enemyExp = 1000;
                     enemyGold = 500;
-                    images.BattlePage_Samurai(player, Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
+                    images.BattlePage_Samurai(playerHp.ToString("N1"), playerMp.ToString("N1"), Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
                     break;
                 case 4:
                     Log = "오크전사가 나타났다!";
@@ -310,7 +311,7 @@ namespace Text_RPG
                     enemyDeffense = 10;
                     enemyExp = 800;
                     enemyGold = 600;
-                    images.BattlePage_Orc(player, Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
+                    images.BattlePage_Orc(playerHp.ToString("N1"), playerMp.ToString("N1"), Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
                     break;
                 case 5:
                     Log = "다크드래곤이 나타났다!";
@@ -320,7 +321,7 @@ namespace Text_RPG
                     enemyDeffense = 15;
                     enemyExp = 9999;
                     enemyGold = 9999;
-                    images.BattlePage_dragon(player, Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
+                    images.BattlePage_dragon(playerHp.ToString("N1"), playerMp.ToString("N1"), Log, enemyname, (int)enemyHp, (int)enemyAttack, (int)enemyDeffense, (int)enemyExp, (int)enemyGold);
                     break;
             }
         }

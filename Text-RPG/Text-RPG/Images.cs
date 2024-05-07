@@ -1008,7 +1008,7 @@ namespace Text_RPG
         }
 
 
-        public void BattlePage_Wolf(Player player, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
+        public void BattlePage_Wolf(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
         {
             Console.WriteLine
                 (
@@ -1057,7 +1057,7 @@ namespace Text_RPG
                       $"@@###########################################||                                    ||################################################@@                                                  ㅁ\n" +
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                              
-                      $"ㅁㅁㅁㅁㅁㅁㅁ       메 인 메 뉴      ㅁㅁㅁㅁㅁㅁㅁ    플  레  이  어    ㅁ  체 력{GetName(player.Hp.ToString(), 19)}ㅁ  마 력{GetName(player.Hp.ToString(), 21)}ㅁㅁ    # 알림 #    {GetName(Log,4)}\n" +                                                                                
+                      $"ㅁㅁㅁㅁㅁㅁㅁ       메 인 메 뉴      ㅁㅁㅁㅁㅁㅁㅁ    플  레  이  어    ㅁ  체 력{GetName(playerHp, 19)}ㅁ  마 력{GetName(playerMp, 21)}ㅁㅁ    # 알림 #    {GetName(Log,4)}\n" +                                                                                
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                              
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                                  
@@ -1078,7 +1078,7 @@ namespace Text_RPG
         }
 
 
-        public void BattlePage_Goblin(Player player, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
+        public void BattlePage_Goblin(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
         {
             Console.WriteLine
                 (
@@ -1127,7 +1127,7 @@ namespace Text_RPG
                       $"@@###########################################||                                    ||################################################@@                                                  ㅁ\n" +
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                            
-                      $"ㅁㅁㅁㅁㅁㅁㅁ       메 인 메 뉴      ㅁㅁㅁㅁㅁㅁㅁ    플  레  이  어    ㅁ  체 력{GetName(player.Hp.ToString(), 19)}ㅁ  마 력{GetName(player.Hp.ToString(), 21)}ㅁㅁ    # 알림 #    {GetName(Log, 4)}\n" +                                                                              
+                      $"ㅁㅁㅁㅁㅁㅁㅁ       메 인 메 뉴      ㅁㅁㅁㅁㅁㅁㅁ    플  레  이  어    ㅁ  체 력{GetName(playerHp, 19)}ㅁ  마 력{GetName(playerMp, 21)}ㅁㅁ    # 알림 #    {GetName(Log, 4)}\n" +                                                                              
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                            
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                            
@@ -1148,7 +1148,7 @@ namespace Text_RPG
         }
 
 
-        public void BattlePage_Ghost(Player player, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
+        public void BattlePage_Ghost(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
         {
             Console.WriteLine
                 (
@@ -1197,7 +1197,7 @@ namespace Text_RPG
                       $"@@###########################################||                                    ||################################################@@                                                  ㅁ\n" +
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                           
-                      $"ㅁㅁㅁㅁㅁㅁㅁ       메 인 메 뉴      ㅁㅁㅁㅁㅁㅁㅁ    플  레  이  어    ㅁ  체 력{GetName(player.Hp.ToString(), 19)}ㅁ  마 력{GetName(player.Hp.ToString(), 21)}ㅁㅁ    # 알림 #    {GetName(Log, 4)}\n" +                                                                             
+                      $"ㅁㅁㅁㅁㅁㅁㅁ       메 인 메 뉴      ㅁㅁㅁㅁㅁㅁㅁ    플  레  이  어    ㅁ  체 력{GetName(playerHp, 19)}ㅁ  마 력{GetName(playerMp, 21)}ㅁㅁ    # 알림 #    {GetName(Log, 4)}\n" +                                                                             
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                           
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                          
@@ -1218,7 +1218,7 @@ namespace Text_RPG
         }
 
 
-        public void BattlePage_Samurai(Player player, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
+        public void BattlePage_Samurai(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
         {
             Console.WriteLine
                 (
@@ -1267,7 +1267,7 @@ namespace Text_RPG
                       $"@@###########################################||                                    ||################################################@@                                                  ㅁ\n" +
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                             
-                      $"ㅁㅁㅁㅁㅁㅁㅁ       메 인 메 뉴      ㅁㅁㅁㅁㅁㅁㅁ    플  레  이  어    ㅁ  체 력{GetName(player.Hp.ToString(), 19)}ㅁ  마 력{GetName(player.Hp.ToString(), 21)}ㅁㅁ    # 알림 #    {GetName(Log, 4)}\n" +                                                                               
+                      $"ㅁㅁㅁㅁㅁㅁㅁ       메 인 메 뉴      ㅁㅁㅁㅁㅁㅁㅁ    플  레  이  어    ㅁ  체 력{GetName(playerHp, 19)}ㅁ  마 력{GetName(playerMp, 21)}ㅁㅁ    # 알림 #    {GetName(Log, 4)}\n" +                                                                               
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                             
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                             
@@ -1288,7 +1288,7 @@ namespace Text_RPG
         }
 
 
-        public void BattlePage_Orc(Player player, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
+        public void BattlePage_Orc(string playerHp, string playerMp,string Log, string name, int hp, int attack, int deffence, int exp, int gold)
         {
             Console.WriteLine
                 (
@@ -1337,7 +1337,7 @@ namespace Text_RPG
                       $"@@###########################################||                                    ||################################################@@                                                  ㅁ\n" +
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                             
-                      $"ㅁㅁㅁㅁㅁㅁㅁ       메 인 메 뉴      ㅁㅁㅁㅁㅁㅁㅁ    플  레  이  어    ㅁ  체 력{GetName(player.Hp.ToString(), 19)}ㅁ  마 력{GetName(player.Hp.ToString(), 21)}ㅁㅁ    # 알림 #    {GetName(Log, 4)}\n" +                                                                               
+                      $"ㅁㅁㅁㅁㅁㅁㅁ       메 인 메 뉴      ㅁㅁㅁㅁㅁㅁㅁ    플  레  이  어    ㅁ  체 력{GetName(playerHp, 19)}ㅁ  마 력{GetName(playerMp, 21)}ㅁㅁ    # 알림 #    {GetName(Log, 4)}\n" +                                                                               
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                             
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                             
@@ -1358,7 +1358,7 @@ namespace Text_RPG
         }
 
 
-        public void BattlePage_dragon(Player player, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
+        public void BattlePage_dragon(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
         {
             Console.WriteLine
                 (
@@ -1407,7 +1407,7 @@ namespace Text_RPG
                       $"@@###########################################||                                    ||################################################@@                                                  ㅁ\n" +
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                            
-                      $"ㅁㅁㅁㅁㅁㅁㅁ       메 인 메 뉴      ㅁㅁㅁㅁㅁㅁㅁ    플  레  이  어    ㅁ  체 력{GetName(player.Hp.ToString(), 19)}ㅁ  마 력{GetName(player.Hp.ToString(), 21)}ㅁㅁ    # 알림 #    {GetName(Log, 4)}\n" +                                                                              
+                      $"ㅁㅁㅁㅁㅁㅁㅁ       메 인 메 뉴      ㅁㅁㅁㅁㅁㅁㅁ    플  레  이  어    ㅁ  체 력{GetName(playerHp, 19)}ㅁ  마 력{GetName(playerMp, 21)}ㅁㅁ    # 알림 #    {GetName(Log, 4)}\n" +                                                                              
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                            
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                          
