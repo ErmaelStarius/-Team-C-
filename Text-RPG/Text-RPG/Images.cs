@@ -988,13 +988,13 @@ namespace Text_RPG
                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                      $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                                 
                      $"ㅁ  [1] 스 테 이 터 스  ㅁㅁ   [2] 스 킬 정 보    ㅁ\n" +                                                                                                                                                                                 
-                     $"ㅁ                      ㅁㅁ                      ㅁ             [Z]  {option_01}\n" +                                                                                                                                                    
+                     $"ㅁ                      ㅁㅁ                      ㅁ             [Z]  {option_01} [대화]\n" +                                                                                                                                                    
                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ\n" +                                                                                                                                                                                 
                      $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                                 
-                     $"ㅁ  [3] 아 이 템 장 비  ㅁㅁ   [4] 인 벤 토 리    ㅁ             [X]  {option_02}\n" +                                                                                                                                                    
+                     $"ㅁ  [3] 아 이 템 장 비  ㅁㅁ   [4] 인 벤 토 리    ㅁ             [X]  {option_02} [상점]\n" +                                                                                                                                                    
                      $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                                 
                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ\n" +                                                                                                                                                                                 
-                     $"ㅁ                      ㅁㅁ                      ㅁ             [C]  {option_03}\n" +                                                                                                                                                    
+                     $"ㅁ                      ㅁㅁ                      ㅁ             [C]  {option_03} [전투]\n" +                                                                                                                                                    
                      $"ㅁ  [5] 퀘 스 트 정 보  ㅁㅁ   [6] 게 임 저 장    ㅁ\n" +                                                                                                                                                                                 
                      $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                                 
                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ\n" +                                                                                                                                                                                 
@@ -1007,8 +1007,40 @@ namespace Text_RPG
             return Choice;
         }
 
+        public void BattlePage(int type, string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold, string option1, string option2, string option3, string option4)
+        {
+            switch (type)
+            {
+                case 0:
+                    BattlePage_Wolf(playerHp, playerMp, Log, name, hp, attack, deffence, exp, gold, option1, option2, option3, option4);
+                    break;
+                case 1:
+                    BattlePage_Goblin(playerHp, playerMp, Log, name, hp, attack, deffence, exp, gold, option1, option2, option3, option4);
+                    break;
+                case 2:
+                    BattlePage_Ghost(playerHp, playerMp, Log, name, hp, attack, deffence, exp, gold, option1, option2, option3, option4);
+                    break;
+                case 3:
+                    BattlePage_Samurai(playerHp, playerMp, Log, name, hp, attack, deffence, exp, gold, option1, option2, option3, option4);
+                    break;
+                case 4:
+                    BattlePage_Orc(playerHp, playerMp, Log, name, hp, attack, deffence, exp, gold, option1, option2, option3, option4);
+                    break;
+                case 5:
+                    BattlePage_dragon(playerHp, playerMp, Log, name, hp, attack, deffence, exp, gold, option1, option2, option3, option4);
+                    break;
+            }
+        }
 
-        public void BattlePage_Wolf(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
+        public string selectOption(string sentence)
+        {
+            string result = sentence;
+
+            return result;
+        }
+
+
+        public void BattlePage_Wolf(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold, string option1, string option2, string option3, string option4)
         {
             Console.WriteLine
                 (
@@ -1061,16 +1093,16 @@ namespace Text_RPG
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                              
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                                  
-                      $"ㅁ  [1] 스 테 이 터 스  ㅁㅁ   [2] 스 킬 정 보    ㅁ         [Z]\n" +                                                                                                                                                                      
+                      $"ㅁ  [1] 스 테 이 터 스  ㅁㅁ   [2] 스 킬 정 보    ㅁ         [1]   {option1}\n" +                                                                                                                                                                      
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                                  
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ\n" +                                                                                                                                                                                  
-                      $"ㅁ                      ㅁㅁ                      ㅁ         [X]\n" +                                                                                                                                                                      
+                      $"ㅁ                      ㅁㅁ                      ㅁ         [2]   {option2}\n" +                                                                                                                                                                      
                       $"ㅁ  [3] 아 이 템 장 비  ㅁㅁ   [4] 인 벤 토 리    ㅁ\n" +                                                                                                                                                                                  
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                                  
-                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ         [C]\n" +                                                                                                                                                                      
+                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ         [3]   {option3}\n" +                                                                                                                                                                      
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                                  
                       $"ㅁ  [5] 퀘 스 트 정 보  ㅁㅁ   [6] 게 임 저 장    ㅁ\n" +                                                                                                                                                                                  
-                      $"ㅁ                      ㅁㅁ                      ㅁ         [V]\n" +                                                                                                                                                                      
+                      $"ㅁ                      ㅁㅁ                      ㅁ         [4]   {option4}\n" +                                                                                                                                                                      
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ\n" +                                                                                                                                                                                  
                       $"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"
 
@@ -1078,7 +1110,7 @@ namespace Text_RPG
         }
 
 
-        public void BattlePage_Goblin(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
+        public void BattlePage_Goblin(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold, string option1, string option2, string option3, string option4)
         {
             Console.WriteLine
                 (
@@ -1131,16 +1163,16 @@ namespace Text_RPG
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                            
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                            
-                      $"ㅁ  [1] 스 테 이 터 스  ㅁㅁ   [2] 스 킬 정 보    ㅁ         [Z]\n" +                                                                                                                                                                
+                      $"ㅁ  [1] 스 테 이 터 스  ㅁㅁ   [2] 스 킬 정 보    ㅁ         [1]    {option1}\n" +                                                                                                                                                                
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                            
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ\n" +                                                                                                                                                                            
-                      $"ㅁ                      ㅁㅁ                      ㅁ         [X]\n" +                                                                                                                                                                
+                      $"ㅁ                      ㅁㅁ                      ㅁ         [2]    {option2}\n" +                                                                                                                                                                
                       $"ㅁ  [3] 아 이 템 장 비  ㅁㅁ   [4] 인 벤 토 리    ㅁ\n" +                                                                                                                                                                            
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                            
-                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ         [C]\n" +                                                                                                                                                                
+                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ         [3]    {option3}\n" +                                                                                                                                                                
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                            
                       $"ㅁ  [5] 퀘 스 트 정 보  ㅁㅁ   [6] 게 임 저 장    ㅁ\n" +                                                                                                                                                                            
-                      $"ㅁ                      ㅁㅁ                      ㅁ         [V]\n" +                                                                                                                                                                
+                      $"ㅁ                      ㅁㅁ                      ㅁ         [4]    {option4}\n" +                                                                                                                                                                
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ\n" +                                                                                                                                                                            
                       $"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"
 
@@ -1148,7 +1180,7 @@ namespace Text_RPG
         }
 
 
-        public void BattlePage_Ghost(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
+        public void BattlePage_Ghost(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold, string option1, string option2, string option3, string option4)
         {
             Console.WriteLine
                 (
@@ -1201,16 +1233,16 @@ namespace Text_RPG
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                           
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                          
-                      $"ㅁ  [1] 스 테 이 터 스  ㅁㅁ   [2] 스 킬 정 보    ㅁ         [Z]\n" +                                                                                                                                                              
+                      $"ㅁ  [1] 스 테 이 터 스  ㅁㅁ   [2] 스 킬 정 보    ㅁ         [1]    {option1}\n" +                                                                                                                                                              
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                          
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ\n" +                                                                                                                                                                          
-                      $"ㅁ                      ㅁㅁ                      ㅁ         [X]\n" +                                                                                                                                                              
+                      $"ㅁ                      ㅁㅁ                      ㅁ         [2]    {option2}\n" +                                                                                                                                                              
                       $"ㅁ  [3] 아 이 템 장 비  ㅁㅁ   [4] 인 벤 토 리    ㅁ\n" +                                                                                                                                                                          
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                          
-                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ         [C]\n" +                                                                                                                                                              
+                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ         [3]    {option3}\n" +                                                                                                                                                              
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                          
                       $"ㅁ  [5] 퀘 스 트 정 보  ㅁㅁ   [6] 게 임 저 장    ㅁ\n" +                                                                                                                                                                          
-                      $"ㅁ                      ㅁㅁ                      ㅁ         [V]\n" +                                                                                                                                                              
+                      $"ㅁ                      ㅁㅁ                      ㅁ         [4]    {option4}\n" +                                                                                                                                                              
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ\n" +                                                                                                                                                                          
                       $"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"
 
@@ -1218,7 +1250,7 @@ namespace Text_RPG
         }
 
 
-        public void BattlePage_Samurai(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
+        public void BattlePage_Samurai(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold, string option1, string option2, string option3, string option4)
         {
             Console.WriteLine
                 (
@@ -1271,16 +1303,16 @@ namespace Text_RPG
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                             
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                             
-                      $"ㅁ  [1] 스 테 이 터 스  ㅁㅁ   [2] 스 킬 정 보    ㅁ         [Z]\n" +                                                                                                                                                                 
+                      $"ㅁ  [1] 스 테 이 터 스  ㅁㅁ   [2] 스 킬 정 보    ㅁ         [1]    {option1} \n" +                                                                                                                                                                 
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                             
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ\n" +                                                                                                                                                                             
-                      $"ㅁ                      ㅁㅁ                      ㅁ         [X]\n" +                                                                                                                                                                 
+                      $"ㅁ                      ㅁㅁ                      ㅁ         [2]    {option2}\n" +                                                                                                                                                                 
                       $"ㅁ  [3] 아 이 템 장 비  ㅁㅁ   [4] 인 벤 토 리    ㅁ\n" +                                                                                                                                                                             
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                             
-                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ         [C]\n" +                                                                                                                                                                 
+                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ         [3]    {option3}\n" +                                                                                                                                                                 
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                             
                       $"ㅁ  [5] 퀘 스 트 정 보  ㅁㅁ   [6] 게 임 저 장    ㅁ\n" +                                                                                                                                                                             
-                      $"ㅁ                      ㅁㅁ                      ㅁ         [V]\n" +                                                                                                                                                                 
+                      $"ㅁ                      ㅁㅁ                      ㅁ         [4]    {option4}\n" +                                                                                                                                                                 
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ\n" +                                                                                                                                                                             
                       $"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"
 
@@ -1288,7 +1320,7 @@ namespace Text_RPG
         }
 
 
-        public void BattlePage_Orc(string playerHp, string playerMp,string Log, string name, int hp, int attack, int deffence, int exp, int gold)
+        public void BattlePage_Orc(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold, string option1, string option2, string option3, string option4)
         {
             Console.WriteLine
                 (
@@ -1341,16 +1373,16 @@ namespace Text_RPG
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                             
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                             
-                      $"ㅁ  [1] 스 테 이 터 스  ㅁㅁ   [2] 스 킬 정 보    ㅁ         [Z]\n" +                                                                                                                                                                 
+                      $"ㅁ  [1] 스 테 이 터 스  ㅁㅁ   [2] 스 킬 정 보    ㅁ         [1]    {option1}\n" +                                                                                                                                                                 
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                             
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ\n" +                                                                                                                                                                             
-                      $"ㅁ                      ㅁㅁ                      ㅁ         [X]\n" +                                                                                                                                                                 
+                      $"ㅁ                      ㅁㅁ                      ㅁ         [2]    {option2}\n" +                                                                                                                                                                 
                       $"ㅁ  [3] 아 이 템 장 비  ㅁㅁ   [4] 인 벤 토 리    ㅁ\n" +                                                                                                                                                                             
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                             
-                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ         [C]\n" +                                                                                                                                                                 
+                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ         [3]    {option3}\n" +                                                                                                                                                                 
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                             
                       $"ㅁ  [5] 퀘 스 트 정 보  ㅁㅁ   [6] 게 임 저 장    ㅁ\n" +                                                                                                                                                                             
-                      $"ㅁ                      ㅁㅁ                      ㅁ         [V]\n" +                                                                                                                                                                 
+                      $"ㅁ                      ㅁㅁ                      ㅁ         [4]    {option4}\n" +                                                                                                                                                                 
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ\n" +                                                                                                                                                                             
                       $"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"
 
@@ -1358,7 +1390,7 @@ namespace Text_RPG
         }
 
 
-        public void BattlePage_dragon(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold)
+        public void BattlePage_dragon(string playerHp, string playerMp, string Log, string name, int hp, int attack, int deffence, int exp, int gold, string option1, string option2, string option3, string option4)
         {
             Console.WriteLine
                 (
@@ -1411,16 +1443,16 @@ namespace Text_RPG
                       $"ㅁㅁㅁㅁㅁㅁㅁ                        ㅁㅁㅁㅁㅁㅁㅁ                      ㅁ                          ㅁ                            ㅁㅁ\n" +                                                                                            
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ \n" +
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                          
-                      $"ㅁ  [1] 스 테 이 터 스  ㅁㅁ   [2] 스 킬 정 보    ㅁ         [Z]\n" +                                                                                                                                                              
+                      $"ㅁ  [1] 스 테 이 터 스  ㅁㅁ   [2] 스 킬 정 보    ㅁ         [1]    {option1}\n" +                                                                                                                                                              
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                          
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ\n" +                                                                                                                                                                          
-                      $"ㅁ                      ㅁㅁ                      ㅁ         [X]\n" +                                                                                                                                                              
+                      $"ㅁ                      ㅁㅁ                      ㅁ         [2]    {option2}\n" +                                                                                                                                                              
                       $"ㅁ  [3] 아 이 템 장 비  ㅁㅁ   [4] 인 벤 토 리    ㅁ\n" +                                                                                                                                                                          
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                          
-                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ         [C]\n" +                                                                                                                                                              
+                      $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ         [3]    {option3}\n" +                                                                                                                                                              
                       $"ㅁ                      ㅁㅁ                      ㅁ\n" +                                                                                                                                                                          
                       $"ㅁ  [5] 퀘 스 트 정 보  ㅁㅁ   [6] 게 임 저 장    ㅁ\n" +                                                                                                                                                                          
-                      $"ㅁ                      ㅁㅁ                      ㅁ         [V]\n" +                                                                                                                                                              
+                      $"ㅁ                      ㅁㅁ                      ㅁ         [4]    {option4}\n" +                                                                                                                                                              
                       $"ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ\n" +                                                                                                                                                                          
                       $"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"
 
