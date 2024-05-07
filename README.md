@@ -1,3 +1,4 @@
+
 <div align="center"> 
   
 # Team -Ⓒ-
@@ -7,28 +8,28 @@
   
 ### 2주차 팀 프로젝트로 만들어진 다크소울류 콘솔게임입니다.
   
----
+#
 <div align="center"> 
-  
+
 # ⚫ 소개 ⚫
 
   
 </div>
 <div align="center"> 
   
-### 프로젝트 이름 : Dark-Souls
+**프로젝트 이름 :** Dark-Souls
   </div>
 <div align="center"> 
   
-### 프로젝트 기간 : 2024-04-29 ~ 2024-05-06
+**프로젝트 기간 :** 2024-04-29 ~ 2024-05-06
   </div>
 <div align="center"> 
   
-### 개발 언어 : Visual Studio 2022
+**개발 언어 :** Visual Studio 2022
   </div>
 <div align="center"> 
   
-### 팀원 : 최도규, 함지운, 김태형, 위명선
+**팀원 :** 최도규, 함지운, 김태형, 위명선
   </div>
 <div align="center"> 
   
@@ -37,6 +38,9 @@
 <div align="center"> 
   
 ### 💻 숫자 키패드
+
+#
+
 # 🕷️ 구현도 🕷️
 
 #### 🏴󠁡󠁴󠀱󠁿 시작화면
