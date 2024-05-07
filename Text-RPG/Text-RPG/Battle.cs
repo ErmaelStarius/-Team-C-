@@ -47,6 +47,7 @@ namespace Text_RPG
             MonsterAppearRandom();
             while (playerAttack > 0 && enemyHp > 0)
             {
+                
 
                 MyTurn(player, gameManager);  //내턴
                 if (enemyHp <= 0)
@@ -54,7 +55,9 @@ namespace Text_RPG
                     Battle_Reward();
                     break;
                 }
+
                 ContinueTurn();
+              
                 EnemyTurn(player, gameManager);  //적의턴 그러고 적이 죽으면 다시 플레이어턴으로 돌아간다.
 
             }
@@ -72,11 +75,16 @@ namespace Text_RPG
         {
             
             float EnemyDamage = enemyAttack * RandomDamage[random.Next(RandomDamage.Length)] - playerDeffense;
+            float PlayerDamage = playerAttack * RandomDamage[random.Next(RandomDamage.Length)];
 
             if (enemyHp > 0)      //적의 턴
             {
 
-                playerAttack -= (enemyAttack - playerDeffense);                               //적의 데미지는 공격력 - 방어력
+                playerHp -= (enemyAttack - playerDeffense);                               //적의 데미지는 공격력 - 방어력
+                if (EnemyDamage <= playerDeffense)
+                {
+                    EnemyDamage = 0;
+                }
                 Console.WriteLine($"적은 당신에게 {EnemyDamage.ToString("N1")} 만큼의 데미지를 입혔습니다.");
                 
             }
@@ -165,15 +173,16 @@ namespace Text_RPG
         {
             Console.Clear();
             BattleStats();
-            Console.WriteLine("1. 회복포션 | 2. 돌아가기");
+            Console.WriteLine("1. 회복포션(돈을소비한다) | 2. 돌아가기");
             Console.WriteLine("");
             Console.Write("행동을 고르싶시오 >>   ");
             string choiceitem = Console.ReadLine();
             if (choiceitem == "1")
             {
                 Console.Clear();
-                Console.WriteLine("당신은 포션을 사용해 10 만큼 회복했다.!");   //포션 사용
-                playerHp += 10;
+                playerHp += 50;
+                playerGold -= 50;
+                Console.WriteLine($"당신은 포션을 사용해 50 만큼 회복했다.!(남은 골드 : {playerGold} )");   //포션 사용
                 MyTurn(player, gameManager);
             }
             else if (choiceitem == "2")
