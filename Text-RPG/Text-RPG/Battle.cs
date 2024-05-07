@@ -79,12 +79,12 @@ namespace Text_RPG
 
             if (enemyHp > 0)      //적의 턴
             {
-
-                playerHp -= (enemyAttack - playerDeffense);                               //적의 데미지는 공격력 - 방어력
                 if (EnemyDamage <= playerDeffense)
                 {
                     EnemyDamage = 0;
                 }
+                playerHp -= (EnemyDamage);                               //적의 데미지는 공격력 - 방어력
+                
                 Console.WriteLine($"적은 당신에게 {EnemyDamage.ToString("N1")} 만큼의 데미지를 입혔습니다.");
                 
             }
