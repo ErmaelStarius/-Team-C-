@@ -57,7 +57,9 @@ namespace Text_RPG
                     Battle_Reward();
                     break;
                 }
+
                 ContinueTurn();
+              
                 EnemyTurn(player, gameManager);  //적의턴 그러고 적이 죽으면 다시 플레이어턴으로 돌아간다.
 
             }
@@ -80,6 +82,7 @@ namespace Text_RPG
         {
             
             float EnemyDamage = enemyAttack * RandomDamage[random.Next(RandomDamage.Length)] - playerDeffense;
+            float PlayerDamage = playerAttack * RandomDamage[random.Next(RandomDamage.Length)];
 
             if (enemyHp > 0)      //적의 턴
             {
@@ -107,11 +110,11 @@ namespace Text_RPG
         {
             if (enemyHp < 0)
             {
-                if (enemyname == "늑대")
+                if (enemyname == "달빛늑대")
                 {
                     questManager.KillWolfCount();
                 }
-                if (enemyname == "고블린")
+                if (enemyname == "홉고블린")
                 {
                     questManager.KillGoblinCount();
                 }
