@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Text-RPG.csproj": {}
+    "C:\\Users\\ErmaelStarius\\Desktop\\Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Text-RPG.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Text-RPG.csproj": {
+    "C:\\Users\\ErmaelStarius\\Desktop\\Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Text-RPG.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Text-RPG.csproj",
+        "projectUniqueName": "C:\\Users\\ErmaelStarius\\Desktop\\Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Text-RPG.csproj",
         "projectName": "Text-RPG",
-        "projectPath": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Text-RPG.csproj",
+        "projectPath": "C:\\Users\\ErmaelStarius\\Desktop\\Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\Text-RPG.csproj",
         "packagesPath": "C:\\Users\\ErmaelStarius\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ErmaelStarius\\Desktop\\#Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\obj\\",
+        "outputPath": "C:\\Users\\ErmaelStarius\\Desktop\\Project\\[Team] C#\\Text-RPG\\-Team-C-\\Text-RPG\\Text-RPG\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
